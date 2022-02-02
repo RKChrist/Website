@@ -400,7 +400,7 @@ section .title::after{
 
 /* teams section styling */
 .teams .title::after{
-    content: "I worked with";
+    content: "I worked on";
 }
 .teams .carousel .card{
     background: #222;
@@ -459,6 +459,10 @@ section .title::after{
 .owl-dot.active,
 .owl-dot:hover{
     background: crimson!important;
+}
+.portCards{
+    height: 18rem !important;
+    width: 18rem !important;
 }
 /* contact section styling */
 .contact .title::after{
@@ -686,7 +690,7 @@ footer span a:hover{
         margin: 0;
     }
     .right form .error-box{
-       width: 150px;
+       width: 200px;
     }
     .scroll-up-btn{
         right: 15px;
