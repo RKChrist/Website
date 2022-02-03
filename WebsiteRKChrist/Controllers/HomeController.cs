@@ -23,6 +23,10 @@ namespace WebsiteRKChrist.Controllers
         {
             return View();
         }
+        public IActionResult Portfolio()
+        {
+            return View();
+        }
 
         [HttpPost]
         public IActionResult sendEmail(EmailViewModel model)

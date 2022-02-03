@@ -402,6 +402,9 @@ section .title::after{
 .teams .title::after{
     content: "I worked on";
 }
+.week .week::after {
+    content: "2022";
+}
 .teams .carousel .card{
     background: #222;
     border-radius: 6px;
@@ -463,6 +466,9 @@ section .title::after{
 .portCards{
     height: 18rem !important;
     width: 18rem !important;
+}
+.owlcard{
+    color:#FFF;
 }
 /* contact section styling */
 .contact .title::after{
