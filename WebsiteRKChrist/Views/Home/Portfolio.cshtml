@@ -1,98 +1,16 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    Layout = "_Subpages";
 }
-@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-<nav class="navbar">
-    <div class="max-width">
-        <div class="logo"><a href="#"><span>{</span>RKChrist<span>}</span></a></div>
-        <ul class="menu">
-            <li><a asp-action="index" asp-fragment="about" class="menu-btn">About</a></li>
-            <li><a href="#services" class="menu-btn">Services</a></li>
-            <li><a href="#skills" class="menu-btn">Skills</a></li>
-            <li><a href="#portfolio" class="menu-btn">PortFolio</a></li>
-            <li><a href="#teams" class="menu-btn">Teams</a></li>
-            <li><a href="#contact" class="menu-btn">Contact</a></li>
-            <li>
-                <a onclick="myFunction()" class="dropbtn">Languages</a>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="#home">Danish</a>
-                    <a href="#about">English</a>
-                </div>
-            </li>
-        </ul>
-        <div class="menu-btn">
-            <i class="fas fa-bars"></i>
-        </div>
-    </div>
-</nav>
-
-<section class="home" id="home">
-    <div class="max-width">
-        <div class="home-content">
-            <div class="text-1">Hello, my name is</div>
-            <div class="text-2">Rune Christensen</div>
-            <div class="text-3">And I'm a <span class="typing"></span></div>
-            <a href="#">Hire me</a>
-        </div>
-    </div>
-</section>
 <section class="container" id="container">
     <div class="container week">
-        <h2 class="title week">What I've worked on </h2>
+        <h2 class="title week">Logbog </h2>
         <div class="row">
             <div class="col-md-12">
                 <div class="main-timeline8">
-                    <a>
-                        <div class="timeline">
-                            <span class="timeline-icon"></span>
-                            <span class="year">Uge 5</span>
-                            <div class="timeline-content">
-                                <h3 class="title">Projekt Opstart</h3>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis justo id pulvinar suscipit. Pellentesque rutrum vehicula erat sed dictum. Integer quis turpis magna. Suspendisse tincidunt elit at erat tincidunt, vel vulputate arcu dapibus. Etiam accumsan ornare posuere. Nullam est.
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                    @*<div class="timeline">
-                        <span class="timeline-icon"></span>
-                        <span class="year">Uge 6</span>
-                        <div class="timeline-content">
-                            <h3 class="title">Web Developer</h3>
-                            <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis justo id pulvinar suscipit. Pellentesque rutrum vehicula erat sed dictum. Integer quis turpis magna. Suspendisse tincidunt elit at erat tincidunt, vel vulputate arcu dapibus. Etiam accumsan ornare posuere. Nullam est.
-                            </p>
-                            
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <span class="timeline-icon"></span>
-                        <span class="year">2015</span>
-                        <div class="timeline-content">
-                            <h3 class="title">Web Desginer</h3>
-                            <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis justo id pulvinar suscipit. Pellentesque rutrum vehicula erat sed dictum. Integer quis turpis magna. Suspendisse tincidunt elit at erat tincidunt, vel vulputate arcu dapibus. Etiam accumsan ornare posuere. Nullam est.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <span class="timeline-icon"></span>
-                        <span class="year">2014</span>
-                        <div class="timeline-content">
-                            <h3 class="title">Web Developer</h3>
-                            <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis justo id pulvinar suscipit. Pellentesque rutrum vehicula erat sed dictum. Integer quis turpis magna. Suspendisse tincidunt elit at erat tincidunt, vel vulputate arcu dapibus. Etiam accumsan ornare posuere. Nullam est.
-                            </p>
-                        </div>
-                    </div>*@
+                    <partial name="_TimeLine" />
                 </div>
             </div>
         </div>
     </div>
 </section>
+

@@ -21,12 +21,26 @@ namespace WebsiteRKChrist.Controllers
 
         public IActionResult Index()
         {
+            
             return View();
         }
         public IActionResult Portfolio()
         {
             return View();
         }
+        public IActionResult UsedMaterial()
+        {
+            return View();
+        }
+        public IActionResult Literature()
+        {
+            return View();
+        }
+        public IActionResult LearningObjektives()
+        {
+            return View();
+        }
+
 
         [HttpPost]
         public IActionResult sendEmail(EmailViewModel model)

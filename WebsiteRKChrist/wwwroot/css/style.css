@@ -294,15 +294,17 @@ section .title::after{
     background: #111;
     content: "what i provide";
 }
-.services .serv-content .card{
-    width: calc(33% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 50px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
+    .services .serv-content .card {
+        width: calc(33% - 20px);
+        background: #222;
+        text-align: center;
+        border-radius: 6px;
+        padding: 50px 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        color: #fff !important;
+    }
+
 .services .serv-content .card:hover{
     background: crimson;
 }
@@ -396,8 +398,6 @@ section .title::after{
 .skills-content .right .sql::before{
     width: 70%;
 }
-
-
 /* teams section styling */
 .teams .title::after{
     content: "I worked on";
@@ -707,3 +707,28 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+/* Style the black navigation bar */
+.portfoliobar {
+    overflow: hidden;
+    background-color: #111;
+}
+    /* Style the navigation bar links */
+    .portfoliobar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+
+        /* Right-aligned link */
+        .portfoliobar a.right {
+            float: right;
+        }
+
+        /* Change color on hover */
+        .portfoliobar a:hover {
+            background-color: crimson;
+        }
+        

@@ -1,244 +1,246 @@
 ﻿@model EmailViewModel
+<!-- NavBar-->
+<nav class="navbar">
+    <div class="max-width">
+        <div class="logo"><a asp-action="index"><span>{</span>RKChrist<span>}</span></a></div>
+        <ul class="menu">
+            <li><a asp-action="index" asp-fragment="about" asp-controller="home" class="menu-btn">About</a></li>
+            <li><a asp-action="index" asp-fragment="services" asp-controller="home" class="menu-btn">Services</a></li>
+            <li><a href="#skills" class="menu-btn">Skills</a></li>
+            <li><a href="#teams" class="menu-btn">PortFolio</a></li>
+            <li><a href="#contact" class="menu-btn">Contact</a></li>
+            <li>
+                <a onclick="myFunction()" class="dropbtn">Languages</a>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#home">Danish</a>
+                    <a href="#about">English</a>
+                </div>
+            </li>
+        </ul>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</nav>
 
-    <!-- NavBar-->
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="#"><span>{</span>RKChrist<span>}</span></a></div>
-            <ul class="menu">
-                <li><a asp-action="index" asp-fragment="about" asp-controller="home" class="menu-btn">About</a></li>
-                <li><a asp-action="index" asp-fragment="services" asp-controller="home" class="menu-btn">Services</a></li>
-                <li><a class="menu-btn">Skills</a></li>
-                <li><a href="#teams" class="menu-btn">PortFolio</a></li>
-                <li><a href="#contact" class="menu-btn">Contact</a></li>
-                <li>
-                    <a onclick="myFunction()" class="dropbtn">Languages</a>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="#home">Danish</a>
-                        <a href="#about">English</a>
-                    </div>
-                </li>
+<!-- home section start -->
+<section class="home" id="home">
+    <div class="max-width">
+        <div class="home-content">
+            <div class="text-1">Hello, my name is</div>
+            <div class="text-2">Rune Christensen</div>
+            <div class="text-3">And I'm a <span class="typing"></span></div>
+            <a href="#">Hire me</a>
+        </div>
+    </div>
+    <div style="display:block;">
+        <div class="social-icons">
+            <ul>
+                <li><a href="https://www.facebook.com/rune.kennetchristensen/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/rune-christensen-737287193/"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/RKChrist"><i class="fa fa-github"></i></a></li>
             </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</section>
+<!-- about section start -->
+<section class="about" id="about">
+    <div class="max-width">
+        <h2 class="title">About me</h2>
+        <div class="about-content">
+            <div class="column left">
+                <img src="images/profile-1.jpeg" alt="">
+            </div>
+            <div class="column right">
+                <div class="text">I'm Rune and I'm a <span class="typing-2"></span></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
+                <a href="#">Show CV</a>
             </div>
         </div>
-    </nav>
+    </div>
+</section>
+<!--What i provide section -->
 
-    <!-- home section start -->
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">Hello, my name is</div>
-                <div class="text-2">Rune Christensen</div>
-                <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a href="#">Hire me</a>
-            </div>
-        </div>
-        <div style="display:block;">
-            <div class="social-icons">
-                <ul>
-                    <li><a href="https://www.facebook.com/rune.kennetchristensen/"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/rune-christensen-737287193/"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/RKChrist"><i class="fa fa-github"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!-- about section start -->
-    <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title">About me</h2>
-            <div class="about-content">
-                <div class="column left">
-                    <img src="images/profile-1.jpeg" alt="">
-                </div>
-                <div class="column right">
-                    <div class="text">I'm Rune and I'm a <span class="typing-2"></span></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
-                    <a href="#">Show CV</a>
+
+<section class="services" id="services">
+    <div class="max-width">
+        <h2 class="title">My services</h2>
+        <div class="serv-content">
+            <div class="card">
+                <div class="box">
+                    <i class="fas fa-server"></i>
+                    <div class="text">Data Science</div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
                 </div>
             </div>
+            <div class="card">
+                <div class="box">
+                    <i class="fas fa-drafting-compass"></i>
+                    <div class="text">Object-Oriented Design</div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="text">Cyper Security</div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                </div>
+            </div>
         </div>
-    </section>
-    <!--What i provide section -->
+    </div>
+
+</section>
+<!-- skills section start -->
+<section class="skills" id="skills">
+    <div class="max-width">
+        <h2 class="title">My skills</h2>
+        <div class="skills-content">
+            <div class="column left">
+                <div class="text">My creative skills & experiences.</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.</p>
+                <a href="#">Read more</a>
+            </div>
+            <div class="column right">
+                <div class="bars">
+                    <div class="info">
+                        <span>C#</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="line csharp"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>SQL</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="line sql"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>Python</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="line python"></div>
+                </div>
+
+                <div class="bars">
+                    <div class="info">
+                        <span>UML</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="line uml"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
-    <section class="services" id="services">
-        <div class="max-width">
-            <h2 class="title">My services</h2>
-            <div class="serv-content">
+<!-- Portfolio section start -->
+<section class="teams" id="teams">
+    <div class="max-width">
+        <h2 class="title">Portfolio</h2>
+        
+        <div class="carousel owl-carousel">
+            <a asp-action="Portfolio">
                 <div class="card">
                     <div class="box">
-                        <i class="fas fa-server"></i>
-                        <div class="text">Data Science</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                        <img class="portCards" src="images/profile-4.jpeg" alt="">
+                        <div class="text">Fjerde Semester</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-drafting-compass"></i>
-                        <div class="text">Object-Oriented Design</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
-                    </div>
+            </a>
+            <div class="card">
+                <div class="box">
+                    <img class="portCards" src="images/profile-1.jpeg">
+                    <div class="text">PadelSport DK</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-shield-alt"></i>
-                        <div class="text">Cyper Security</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
-                    </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img class="portCards" src="images/profile-2.jpeg" alt="">
+                    <div class="text">Bravida</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img class="portCards" src="images/profile-3.jpeg" alt="">
+                    <div class="text">SurfsUP</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="box">
+                    <img class="portCards" src="images/profile-5.jpeg" alt="">
+                    <div class="text">Logbog</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
         </div>
+        @*</a>*@
 
-    </section>
-    <!-- skills section start -->
-    <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">My skills</h2>
-            <div class="skills-content">
-                <div class="column left">
-                    <div class="text">My creative skills & experiences.</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.</p>
-                    <a href="#">Read more</a>
-                </div>
-                <div class="column right">
-                    <div class="bars">
+    </div>
+</section>
+<!-- contact section start -->
+<section class="contact" id="contact">
+    <div class="max-width">
+        <h2 class="title">Contact me</h2>
+        <div class="contact-content">
+            <div class="column left">
+                <div class="text">Get in Touch</div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
+                <div class="icons">
+                    <div class="row">
+                        <i class="fas fa-user"></i>
                         <div class="info">
-                            <span>C#</span>
-                            <span>80%</span>
+                            <div class="head">Name</div>
+                            <div class="sub-title">Rune Kennet Christensen</div>
                         </div>
-                        <div class="line csharp"></div>
                     </div>
-                    <div class="bars">
+                    <div class="row">
+                        <i class="fas fa-map-marker-alt"></i>
                         <div class="info">
-                            <span>SQL</span>
-                            <span>70%</span>
+                            <div class="head">Address</div>
+                            <div class="sub-title">Odense, Denmark</div>
                         </div>
-                        <div class="line sql"></div>
                     </div>
-                    <div class="bars">
+                    <div class="row">
+                        <i class="fas fa-envelope"></i>
                         <div class="info">
-                            <span>Python</span>
-                            <span>60%</span>
+                            <div class="head">Email</div>
+                            <div class="sub-title">RKChristdev@gmail.com</div>
                         </div>
-                        <div class="line python"></div>
-                    </div>
-
-                    <div class="bars">
-                        <div class="info">
-                            <span>UML</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="line uml"></div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-
-    <!-- Portfolio section start -->
-    <section class="teams" id="teams">
-        <div class="max-width">
-            <h2 class="title">Portfolio</h2>
-            @*<a asp-action="portfolio" class="owlcard">*@
-                <div class="carousel owl-carousel">
-                    <div class="card">
-                        <div class="box">
-                            <img class="portCards" src="images/profile-1.jpeg">
-                            <div class="text">PadelSport DK</div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="column right">
+                <div class="text">Message me</div>
+                <form method="post" asp-controller="home" asp-action="sendEmail">
+                    <div class="fields">
+                        <div class="field name">
+                            <input type="text" asp-for="Name" placeholder="Name" required>
+                        </div>
+                        <div class="field email">
+                            <input type="email" asp-for="Email" placeholder="Email" required>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="box">
-                            <img class="portCards" src="images/profile-2.jpeg" alt="">
-                            <div class="text">Bravida</div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
+                    <div class="field">
+                        <input type="text" asp-for="Subject" placeholder="Subject" required>
                     </div>
-                    <div class="card">
-                        <div class="box">
-                            <img class="portCards" src="images/profile-3.jpeg" alt="">
-                            <div class="text">SurfsUP</div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
+                    <div class="field textarea">
+                        <textarea cols="30" rows="10" asp-for="Message" placeholder="Message.." required></textarea>
                     </div>
-                    <div class="card" style="width:18rem;">
-                        <div class="box">
-                            <img class="portCards" src="images/profile-4.jpeg" alt="">
-                            <div class="text">Design</div>
-                            <p></p>
-                        </div>
+                    <div class="button-area">
+                        <button type="submit" value="Send">Send message</button>
                     </div>
-                    <div class="card">
-                        <div class="box">
-                            <img class="portCards" src="images/profile-5.jpeg" alt="">
-                            <div class="text">Logbog</div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                </div>
-            @*</a>*@
-            
-        </div>
-    </section>
-    <!-- contact section start -->
-    <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="title">Contact me</h2>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="text">Get in Touch</div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fas fa-user"></i>
-                            <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Rune Kennet Christensen</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">Odense, Denmark</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-envelope"></i>
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title">RKChristdev@gmail.com</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="column right">
-                    <div class="text">Message me</div>
-                    <form method="post" asp-controller="home" asp-action="sendEmail">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" asp-for="Name" placeholder="Name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" asp-for="Email" placeholder="Email" required>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <input type="text" asp-for="Subject" placeholder="Subject" required>
-                        </div>
-                        <div class="field textarea">
-                            <textarea cols="30" rows="10" asp-for="Message" placeholder="Message.." required></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button type="submit" value="Send">Send message</button>
-                        </div>
-                    </form>
-                </div>
+                </form>
             </div>
         </div>
-    </section>
+    </div>
+</section>

@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<!-- Created By RKChrist -->
+<html lang="en">
+<head>
+    <title>RKChrist</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="~/Logo.ico" />
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--Icons-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a asp-action="index"><span>{</span>RKChrist<span>}</span></a></div>
+            <ul class="menu">
+                <li><a asp-action="index" asp-fragment="about" class="menu-btn">About</a></li>
+                <li><a asp-action="index" asp-fragment="#services" class="menu-btn">Services</a></li>
+                <li><a asp-action="index" asp-fragment="#skills" class="menu-btn">Skills</a></li>
+                <li><a asp-action="index" asp-fragment="#teams" class="menu-btn">PortFolio</a></li>
+                <li><a asp-action="index" asp-fragment="#contact" class="menu-btn">Contact</a></li>
+                <li>
+                    <a onclick="myFunction()" class="dropbtn">Languages</a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#home">Danish</a>
+                        <a href="#about">English</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home" id="home" style="height:100px;">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Velkommen til mit fjerde semester</div>
+                <div class="text-2">Portfølje</div>
+                <div class="text-3">Hvor jeg læser op på <span class="typing-3"></span></div>
+            </div>
+        </div>
+    </section>
+        <div class="portfoliobar">
+            <a asp-action="LearningObjektives" asp-controller="home">Læringsmål og plan</a>
+            <a asp-action="UsedMaterial" asp-controller="home">Gennemgået Materiale</a>
+            <a asp-action="Literature" asp-controller="home">Litteratur</a>
+            <a asp-action="Portfolio" asp-controller="home" asp-fragment="timeline">Logbog</a>
+        </div>
+
+
+    @RenderBody()
+
+
+
+    <!-- footer section start -->
+    <footer>
+        <span>Created By <a href="https://RKChrist.dk">RKChrist</a> | <span class="far fa-copyright"></span> 2020 All rights reserved.</span>
+    </footer>
+
+
+    <script src="~/js/script.js" asp-append-version="true"></script>
+    <script src="~/js/portfolio.js" asp-append-version="true"></script>
+</body>
+</html>

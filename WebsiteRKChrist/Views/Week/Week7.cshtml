@@ -1,0 +1,127 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<script src="~/js/portfolio.js" asp-append-version="true"></script>
+<link href="~/css/Week7.css" rel="stylesheet" type="text/css" asp-append-version="true" />
+<nav class="navbar">
+    <div class="max-width">
+        <div class="logo"><a asp-action="index" asp-controller="home"><span>{</span>RKChrist<span>}</span></a></div>
+        <ul class="menu">
+            <li><a asp-action="index" asp-fragment="about" asp-controller="home" class="menu-btn">About</a></li>
+            <li><a asp-action="index" asp-fragment="services" asp-controller="home" class="menu-btn">Services</a></li>
+            <li><a asp-action="index" asp-fragment="skills" asp-controller="home" class="menu-btn">Skills</a></li>
+            <li><a asp-action="index" asp-fragment="teams" asp-controller="home" class="menu-btn">PortFolio</a></li>
+            <li><a asp-action="index" asp-fragment="contact" asp-controller="home" class="menu-btn">Contact</a></li>
+            <li>
+                <a onclick="myFunction()" class="dropbtn">Languages</a>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#home">Danish</a>
+                    <a href="#about">English</a>
+                </div>
+            </li>
+        </ul>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</nav>
+
+<section class="home" id="home" style="height:100px;">
+    <div class="max-width">
+        <div class="home-content">
+            <div class="text-1">Her er </div>
+            <div class="text-2">Uge 7</div>
+        </div>
+    </div>
+</section>
+
+
+<div class="portfoliobar">
+    <a asp-action="LearningObjektives" asp-controller="home">Læringsmål og plan</a>
+    <a asp-action="UsedMaterial" asp-controller="home">Gennemgået Materiale</a>
+    <a asp-action="Literature" asp-controller="home">Litteratur</a>
+    <a asp-action="Portfolio" asp-controller="home" asp-fragment="timeline">Logbog</a>
+</div>
+
+
+<div id="Week" class="c9" style="margin: auto;">
+    <p class="c7 title" id="h.3jsezvx9cwo4"><span class="c5">Uge 7</span></p>
+    <p class="c0 c1"><span class="c2"></span></p>
+    <p class="c0"><span class="c6">Mandag</span><span class="c2">:</span></p>
+    <p class="c0">
+        <span class="c2">
+            Jeg fik sku lidt af en sk&aelig;ld mandag. Jeg fik sk&aelig;ld ud over den morale vi
+            havde i teamet. Hvilket jeg godt var klar over var et problem, da vi havde nogle gruppemedlemmer der var
+            nede i kulk&aelig;lderen over valg af emne dette semester. Hvilket jeg havde pr&oslash;vet at snakke med dem
+            om. Men i enden, s&aring; kunne jeg ikke hj&aelig;lpe dette gruppemedlem. Da det var et problem, som han
+            skulle snakke med vejlederne om.
+        </span>
+    </p>
+    <p class="c0">
+        <span class="c2">
+            Desuden skulle vi ogs&aring; have struktureret mere klart hvad det var vi skulle lave
+            hvert sprint, s&aring; vi kunne lave sm&aring; klare m&aring;l for hinanden, s&aring; vejledere og
+            teammedlemmer kunne se hvor projektet vil lede hen.
+        </span>
+    </p>
+    <p class="c0 c1"><span class="c2"></span></p>
+    <p class="c0"><span class="c6">Tirsdag</span><span class="c2">:</span></p>
+    <p class="c0">
+        <span class="c2">
+            Jeg inds&aring; noget tirsdag. Hvilket var at i den docker code til at ops&aelig;tte
+            data laken, som jeg lagde i uge 6, var der lagt tanke i bevaring af data. Da der ikke var opsat volumes i
+            docker, som ville bevare data. Derfor pr&oslash;vede jeg tirsdag at ops&aelig;tte det uden held, dette
+            pr&oslash;vede jeg p&aring; at g&oslash;re tirsdag, onsdag og torsdag.
+        </span>
+    </p>
+    <p class="c0 c1"><span class="c2"></span></p>
+    <p class="c0 c1"><span class="c2"></span></p>
+    <p class="c0"><span class="c6">Fredag</span><span class="c2">:</span></p>
+    <p class="c0">
+        <span>
+            Fredag valgte jeg at fokusere p&aring; IT-sikkerhed, da jeg havde brugt hele ugen p&aring; at
+            fokusere p&aring; Data lake.
+        </span><span class="c2">
+            Her blev jeg f&aelig;rdig med f&oslash;lgende sektioner
+            i kurset:
+        </span>
+    </p>
+    <ul class="c8 lst-kix_h9aa2txx4b1v-0 start">
+        <li class="c3 li-bullet-0"><span class="c2">Common Attacks (Password, Spraying etc.)</span></li>
+        <li class="c3 li-bullet-0"><span class="c2">Understanding Vulnerability Types.</span></li>
+        <li class="c3 li-bullet-0"><span class="c2">Vulnerability scanning</span></li>
+        <li class="c3 li-bullet-0"><span>Penetration Testing &amp; Exercises</span></li>
+    </ul>
+    <p class="c0 c1"><span class="c2"></span></p>
+    <p class="c0"><span class="c4">L&oslash;rdag:</span></p>
+    <p class="c0">
+        <span class="c2">
+            L&oslash;rdag m&oslash;dte jeg med min onkel Jim, i forbindelse med mentoring af
+            emnet Data Lake. Han sagde at jeg havde satset for h&oslash;jt. Da jeg var begyndt at t&aelig;nke p&aring;
+            teknologier i stedet for at forst&aring; baggrunden for benyttelsen af disse teknologier. Som han sagde:
+            &ldquo;Du skal l&aelig;re at kravle f&oslash;r du kan l&aelig;re at g&aring;.&rdquo; Hvilket gav mening, da
+            jeg var begyndt at t&aelig;nke p&aring; hvordan data laken skulle opbygges uden at t&aelig;nke over, hvilken
+            slags meta data der skal i, hvordan er PDF filerne opbygget?, hvordan udtr&aelig;kker vi
+            metainformation?
+        </span>
+    </p>
+    <p class="c0">
+        <span class="c2">
+            Dette gjorde mig opm&aelig;rksom p&aring; det forskellige trin, som jeg havde glemt
+            at tage n&aring;r jeg skulle l&aelig;re omkring dette emne.
+        </span>
+    </p>
+    <p class="c0 c1"><span class="c2"></span></p>
+    <p class="c0"><span class="c4">Evaluering:</span></p>
+    <p class="c0 c1"><span class="c2"></span></p>
+    <p class="c0">
+        <span>
+            Generelt set, s&aring; burde jeg have lagt min prioritering af l&aelig;ringsmateriale i forhold
+            til byggelse af data lake helt forkert. Jeg burde have gjort, som jeg g&oslash;r ved IT-sikkerhed, hvor jeg
+            l&aelig;ser omkring foundamentet inden jeg begynder at t&aelig;nke over de teknologi de forskellige
+            benytter.
+        </span>
+    </p>
+</div>
