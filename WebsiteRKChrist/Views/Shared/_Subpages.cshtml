@@ -27,19 +27,20 @@
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a asp-action="index"><span>{</span>RKChrist<span>}</span></a></div>
+            <div class="logo"><a asp-action="index"><span>{</span>RKChrist<span>}</span></a></div>
             <ul class="menu">
-                <li><a asp-action="index" asp-fragment="about" class="menu-btn">About</a></li>
-                <li><a asp-action="index" asp-fragment="#services" class="menu-btn">Services</a></li>
-                <li><a asp-action="index" asp-fragment="#skills" class="menu-btn">Skills</a></li>
-                <li><a asp-action="index" asp-fragment="#teams" class="menu-btn">PortFolio</a></li>
-                <li><a asp-action="index" asp-fragment="#contact" class="menu-btn">Contact</a></li>
-                <li>
-                    <a onclick="myFunction()" class="dropbtn">Languages</a>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="#home">Danish</a>
-                        <a href="#about">English</a>
-                    </div>
-                </li>
+                <li><a asp-action="index" asp-fragment="about" asp-controller="home" class="menu-btn">Omkring mig</a></li>
+                <li><a asp-action="index" asp-fragment="services" asp-controller="home" class="menu-btn">Ydelser</a></li>
+                <li><a href="#skills" class="menu-btn">Færdigheder</a></li>
+                <li><a href="#teams" class="menu-btn">Portfølje</a></li>
+                <li><a href="#contact" class="menu-btn">Kontakt</a></li>
+                @*<li>
+                <a onclick="myFunction()" class="dropbtn">Languages</a>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#home">Danish</a>
+                    <a href="#about">English</a>
+                </div>
+            </li>*@
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>

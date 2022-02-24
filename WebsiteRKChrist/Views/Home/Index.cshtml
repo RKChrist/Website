@@ -4,18 +4,18 @@
     <div class="max-width">
         <div class="logo"><a asp-action="index"><span>{</span>RKChrist<span>}</span></a></div>
         <ul class="menu">
-            <li><a asp-action="index" asp-fragment="about" asp-controller="home" class="menu-btn">About</a></li>
-            <li><a asp-action="index" asp-fragment="services" asp-controller="home" class="menu-btn">Services</a></li>
-            <li><a href="#skills" class="menu-btn">Skills</a></li>
-            <li><a href="#teams" class="menu-btn">PortFolio</a></li>
-            <li><a href="#contact" class="menu-btn">Contact</a></li>
-            <li>
+            <li><a asp-action="index" asp-fragment="about" asp-controller="home" class="menu-btn">Omkring mig</a></li>
+            <li><a asp-action="index" asp-fragment="services" asp-controller="home" class="menu-btn">Ydelser</a></li>
+            <li><a href="#skills" class="menu-btn">Færdigheder</a></li>
+            <li><a href="#teams" class="menu-btn">Portfølje</a></li>
+            <li><a href="#contact" class="menu-btn">Kontakt</a></li>
+            @*<li>
                 <a onclick="myFunction()" class="dropbtn">Languages</a>
                 <div id="myDropdown" class="dropdown-content">
                     <a href="#home">Danish</a>
                     <a href="#about">English</a>
                 </div>
-            </li>
+            </li>*@
         </ul>
         <div class="menu-btn">
             <i class="fas fa-bars"></i>
@@ -27,9 +27,9 @@
 <section class="home" id="home">
     <div class="max-width">
         <div class="home-content">
-            <div class="text-1">Hello, my name is</div>
+            <div class="text-1">Hej, mit navn er</div>
             <div class="text-2">Rune Christensen</div>
-            <div class="text-3">And I'm a <span class="typing"></span></div>
+            <div class="text-3">Og Jeg er en <span class="typing"></span></div>
             <a href="#">Hire me</a>
         </div>
     </div>
@@ -46,13 +46,13 @@
 <!-- about section start -->
 <section class="about" id="about">
     <div class="max-width">
-        <h2 class="title">About me</h2>
+        <h2 class="title">Omkring mig</h2>
         <div class="about-content">
             <div class="column left">
                 <img src="images/profile-1.jpeg" alt="">
             </div>
             <div class="column right">
-                <div class="text">I'm Rune and I'm a <span class="typing-2"></span></div>
+                <div class="text">Jeg er Rune og jeg er <span class="typing-2"></span></div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
                 <a href="#">Show CV</a>
             </div>
@@ -69,22 +69,22 @@
             <div class="card">
                 <div class="box">
                     <i class="fas fa-server"></i>
-                    <div class="text">Data Science</div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                    <div class="text">Big Data</div>
+                    <p>Opbygning og håndtering af en Big Data Arkitektur.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
                     <i class="fas fa-drafting-compass"></i>
                     <div class="text">Object-Oriented Design</div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                    <p>opsætte og vedligeholde et Object Orienteret Design</p>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
                     <i class="fas fa-shield-alt"></i>
-                    <div class="text">Cyper Security</div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                    <div class="text">IT Sikkerhed</div>
+                    <p>sikre forretningshemmligheder og sikre Big Data i ens system</p>
                 </div>
             </div>
         </div>
@@ -94,7 +94,7 @@
 <!-- skills section start -->
 <section class="skills" id="skills">
     <div class="max-width">
-        <h2 class="title">My skills</h2>
+        <h2 class="title">Mine færdigheder</h2>
         <div class="skills-content">
             <div class="column left">
                 <div class="text">My creative skills & experiences.</div>
@@ -140,7 +140,7 @@
 <!-- Portfolio section start -->
 <section class="teams" id="teams">
     <div class="max-width">
-        <h2 class="title">Portfolio</h2>
+        <h2 class="title">Portfølje</h2>
         
         <div class="carousel owl-carousel">
             <a asp-action="Portfolio">
@@ -189,23 +189,23 @@
 <!-- contact section start -->
 <section class="contact" id="contact">
     <div class="max-width">
-        <h2 class="title">Contact me</h2>
+        <h2 class="title">Kontakt</h2>
         <div class="contact-content">
             <div class="column left">
-                <div class="text">Get in Touch</div>
+                <div class="text">Kom i Kontakt</div>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
                 <div class="icons">
                     <div class="row">
                         <i class="fas fa-user"></i>
                         <div class="info">
-                            <div class="head">Name</div>
+                            <div class="head">Navn</div>
                             <div class="sub-title">Rune Kennet Christensen</div>
                         </div>
                     </div>
                     <div class="row">
                         <i class="fas fa-map-marker-alt"></i>
                         <div class="info">
-                            <div class="head">Address</div>
+                            <div class="head">Adresse</div>
                             <div class="sub-title">Odense, Denmark</div>
                         </div>
                     </div>
@@ -224,20 +224,20 @@
                 <form method="post" asp-controller="home" asp-action="sendEmail">
                     <div class="fields">
                         <div class="field name">
-                            <input type="text" asp-for="Name" placeholder="Name" required>
+                            <input type="text" asp-for="Name" placeholder="Navn" required>
                         </div>
                         <div class="field email">
                             <input type="email" asp-for="Email" placeholder="Email" required>
                         </div>
                     </div>
                     <div class="field">
-                        <input type="text" asp-for="Subject" placeholder="Subject" required>
+                        <input type="text" asp-for="Subject" placeholder="Emne" required>
                     </div>
                     <div class="field textarea">
-                        <textarea cols="30" rows="10" asp-for="Message" placeholder="Message.." required></textarea>
+                        <textarea cols="30" rows="10" asp-for="Message" placeholder="Besked.." required></textarea>
                     </div>
                     <div class="button-area">
-                        <button type="submit" value="Send">Send message</button>
+                        <button type="submit" value="Send">Send Besked</button>
                     </div>
                 </form>
             </div>
