@@ -10,6 +10,18 @@
 html{
     scroll-behavior: smooth;
 }
+.max-width a:link {
+    color: #fff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.max-width a:visited {
+    color: #fff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
 
 /* custom scroll bar */
 ::-webkit-scrollbar {
