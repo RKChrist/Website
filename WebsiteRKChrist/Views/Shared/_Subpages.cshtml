@@ -56,16 +56,40 @@
             </div>
         </div>
     </section>
-        <div class="portfoliobar">
-            <a asp-action="LearningObjektives" asp-controller="home">Læringsmål og plan</a>
-            <a asp-action="UsedMaterial" asp-controller="home">Gennemgået Materiale</a>
-            <a asp-action="Literature" asp-controller="home">Litteratur</a>
-            <a asp-action="Portfolio" asp-controller="home" asp-fragment="timeline">Logbog</a>
-        </div>
+    <div class="portfoliobar">
+        <ul>
+            <li><a asp-action="UsedMaterial" asp-controller="home">Gennemgået Materiale</a></li>
+            <li><a asp-action="Literature" asp-controller="home">Litteratur</a></li>
+            <li>
+                <a href="#">About</a>
+                <ul>
+                    <li><a href="#">Our Company</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            <li>
+                <a href="#">Læringsmål og Plan</a>
+                <ul>
+                    <li><a asp-action="Week6And7" asp-controller="LearningObjektive" asp-fragment="c20">Uge 6 og Uge 7</a></li>
+                </ul>
+            </li>
+            <li>
+                <a asp-action="Portfolio" asp-controller="home" asp-fragment="timeline">Logbog</a>
+                <ul>
+                    <li><a asp-action="Week6" asp-controller="Week" asp-fragment="Week">Uge 6</a></li>
+                    <li><a asp-action="Week7" asp-controller="Week" asp-fragment="Week">Uge 7</a></li>
+                </ul>
+            </li>
 
 
-    @RenderBody()
+        </ul>
+    </div>
 
+
+
+        
+            @RenderBody()
+       
 
 
     <!-- footer section start -->
