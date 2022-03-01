@@ -49,12 +49,12 @@
         <h2 class="title">Omkring mig</h2>
         <div class="about-content">
             <div class="column left">
-                <img src="images/profile-1.jpeg" alt="">
+                <img src="~/images/Profile.png" alt="ProfilePicture" asp-append-version="true">
             </div>
             <div class="column right">
                 <div class="text">Jeg er Rune og jeg er <span class="typing-2"></span></div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
-                <a href="#">Show CV</a>
+                <a href="~/CV - Rune K. Christensen.pdf" download="CV - Rune K. Christensen.pdf">Show CV</a>
             </div>
         </div>
     </div>
@@ -146,40 +146,40 @@
             <a asp-action="Portfolio">
                 <div class="card">
                     <div class="box">
-                        <img class="portCards" src="images/profile-4.jpeg" alt="">
+                        <img class="portCards" src="images/WIP.jpg" alt="">
                         <div class="text">Fjerde Semester</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Dette er mit portføjle jeg skulle lave på datamatiker uddannelsen</p>
                     </div>
                 </div>
             </a>
             <div class="card">
                 <div class="box">
-                    <img class="portCards" src="images/profile-1.jpeg">
+                    <img class="portCards" src="~/images/PadelSportDK.png">
                     <div class="text">PadelSport DK</div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <img class="portCards" src="images/profile-2.jpeg" alt="">
+                    <img class="portCards" src="~/images/Bravida.png" alt="">
                     <div class="text">Bravida</div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
-            <div class="card">
+            @*<div class="card">
                 <div class="box">
                     <img class="portCards" src="images/profile-3.jpeg" alt="">
                     <div class="text">SurfsUP</div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-            </div>
+            </div>*@
 
-            <a asp-action="Portfolio">
+            <a asp-action="Portfolio" asp-fragment="container">
                 <div class="card">
                     <div class="box">
                         <img class="portCards" src="images/Logbog.png" alt="">
                         <div class="text">Logbog</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Dette er min logbog for fjerde Semester.</p>
                     </div>
                 </div>
             </a>
@@ -195,7 +195,7 @@
         <div class="contact-content">
             <div class="column left">
                 <div class="text">Kom i Kontakt</div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
+                <p>Ville kunne kontaktes i hverdagene mellem 9 - 15 </p>
                 <div class="icons">
                     <div class="row">
                         <i class="fas fa-user"></i>

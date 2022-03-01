@@ -53,14 +53,14 @@ section {
     margin: auto;
 }
 
-.about, .services, .skills, .teams, .contact, footer {
+.about, .services, .skills, .teams, .contact, footer, .CyberSecurity {
     font-family: 'Poppins', sans-serif;
 }
 
     .about .about-content,
     .services .serv-content,
     .skills .skills-content,
-    .contact .contact-content {
+    .contact .contact-content, .CyberSecurity .Security-content {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -846,6 +846,7 @@ footer {
     padding: 0;
     text-transform: uppercase;
 }
+
     .portfoliobar ul {
         margin: auto;
         padding: 0;
@@ -853,10 +854,10 @@ footer {
         background: #111;
         height: 35px;
         line-height: 25px;
-        
     }
+
         .portfoliobar ul li {
-            margin:auto;
+            margin: auto;
             float: left;
             position: relative;
         }
@@ -870,6 +871,7 @@ footer {
                 font-size: 15px;
                 font-family: 'Poppins', sans-serif
             }
+
             .portfoliobar ul li:hover ul {
                 display: block;
             }
@@ -890,4 +892,16 @@ footer {
                     width: 100%;
                 }
 
-    
+
+
+/* about section styling */
+.CyberSecurity .title::after {
+    content: "N/A";
+}
+
+.CyberSecurity .Security-content {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
