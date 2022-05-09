@@ -1,4 +1,14 @@
-﻿<!DOCTYPE html>
+﻿@{
+    string text = ViewBag.Product;
+    if (text == null && text == default)
+    {
+        ViewBag.Product = "hidden";
+    }
+   
+}
+
+
+<!DOCTYPE html>
 <!-- Created By RKChrist -->
 <html lang="en">
 <head>
@@ -48,7 +58,7 @@
                 <div class="text-3">Hvor jeg læser op på <span class="typing-3"></span></div>
             </div>
         </div>
-        
+
     </section>
     <div class="container">
         <div class="row">
@@ -81,41 +91,51 @@
                             </ul>
                         </li>
                         <li class="nav-item has-submenu">
-                            <a class="nav-link btn-primary btn btn-lg" href="#">Produkt</a>
-                            <ul class="submenu collapse">
-                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 4 </a></li>
-                                <li>
-                                    <a class="nav-link btn-primary btn btn-lg" href="#">Vision </a>
-                                    <ul class="submenu collapse">
-                                        <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 1 </a></li>
-                                        <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 2 </a></li>
-                                        <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 3 </a> </li>
-                                    </ul>
+                            @if (ViewBag.Product != "hidden")
+                            {
+                                <a class="nav-link btn-primary btn btn-lg" href="#">Produkt</a>
+                                <ul class="submenu collapse">
+                                    <li><a class="nav-link btn-primary btn btn-lg" href="#">Intro </a></li>
+                                    <li>
+                                        <a class="nav-link btn-primary btn btn-lg" href="#">Vision </a>
+                                        <ul class="submenu collapse">
+                                            <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 1 </a></li>
+                                            <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 2 </a></li>
+                                            <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 3 </a> </li>
+                                        </ul>
 
-                                </li>
-                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Sikkerhed </a>
-                                    <ul class="submenu collapse">
-                                        <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 1 </a></li>
-                                        <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 2 </a></li>
-                                        <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 3 </a> </li>
-                                    </ul>
-                                
-       
-                                </li>
-                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 7 </a></li>
-                            </ul>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link btn-primary btn btn-lg" href="#">Sikkerhed </a>
+                                        <ul class="submenu collapse">
+                                            <li><a class="nav-link btn-primary btn btn-lg" href="#">GDPR </a></li>
+                                            <li><a class="nav-link btn-primary btn btn-lg" href="#">Misuse / Abuse Cases</a> </li>
+                                            <li>
+                                                <a class="nav-link btn-primary btn btn-lg" href="#">HTTPS </a>
+                                                <ul class="submenu collapse">
+                                                    <li><a class="nav-link btn-primary btn btn-lg" href="#">TLS </a></li>
+                                                    <li><a class="nav-link btn-primary btn btn-lg" href="#">Digital Signature</a> </li>
+                                                    <li><a class="nav-link btn-primary btn btn-lg" href="#">Certifikat Myndighed</a></li>
+
+                                                </ul>
+
+                                            </li>
+
+                                        </ul>
+
+
+                                    </li>
+                                    <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 7 </a></li>
+                                </ul>
+                            }
+                            else
+                            {
+                                <a class="nav-link btn-primary btn btn-lg" asp-action="Index" asp-controller="Product">Produkt</a>
+                            }
+
                         </li>
                         <li class="nav-item has-submenu">
                             <a class="nav-link btn-primary btn btn-lg" href="#">Læringsplan</a>
-                            <ul class="submenu collapse">
-                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 4 </a></li>
-                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 5 </a></li>
-                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 6 </a></li>
-                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 7 </a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item has-submenu">
-                            <a class="nav-link btn-primary btn btn-lg" href="#">Læringsmål</a>
                             <ul class="submenu collapse">
                                 <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 4 </a></li>
                                 <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 5 </a></li>
@@ -134,7 +154,7 @@
         </div>
 
     </div>
-    
+
 
     <!-- footer section start -->
     <footer>

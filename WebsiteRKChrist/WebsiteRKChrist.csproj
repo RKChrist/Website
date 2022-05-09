@@ -19,7 +19,6 @@
 
   <ItemGroup>
     <Folder Include="Views\LearningPlan\" />
-    <Folder Include="Views\Logbog\" />
     <Folder Include="wwwroot\images\Architecture\" />
   </ItemGroup>
 
