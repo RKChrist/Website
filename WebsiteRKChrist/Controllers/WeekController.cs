@@ -20,6 +20,51 @@ namespace WebsiteRKChrist.Controllers
         {
             return View();
         }
-        
+
+        public IActionResult Week9()
+        {
+            return View();
+        }
+        public IActionResult Week10()
+        {
+            return View();
+        }
+        public IActionResult Week11()
+        {
+            return View();
+        }
+        public IActionResult Week12()
+        {
+            return View();
+        }
+        public IActionResult Week13()
+        {
+            return View();
+        }
+        public IActionResult Week14()
+        {
+            return View();
+        }
+        public IActionResult Week15()
+        {
+            return View();
+        }
+        public IActionResult Week16()
+        {
+            return View();
+        }
+
+
+        public IActionResult Week17()
+        {
+            return View();
+        }
+
+        public IActionResult Week18()
+        {
+            return View();
+        }
+
+
     }
 }
