@@ -17,23 +17,6 @@ $(document).ready(function(){
             //   }
             // }
         }
-        if (this.scrollY > 20){
-            var dropdown = document.getElementById("myDropdown");
-            if(!dropdown.classList.contains("navbarDropdown")){
-                document.getElementById("myDropdown").classList.toggle("navbarDropdown");
-            }
-            
-        }
-        else{
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('navbarDropdown')) {
-                    openDropdown.classList.remove('navbarDropdown');
-                  }
-            }
-        }
 
         // scroll-up button show/hide script
         if(this.scrollY > 125){
@@ -42,6 +25,7 @@ $(document).ready(function(){
             $('.scroll-up-btn').removeClass("show");       
         }
     });
+
 
     // slide-up script
     $('.scroll-up-btn').click(function(){
@@ -99,13 +83,11 @@ $(document).ready(function(){
             }
         }
     });
-});
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("dropdownShow");
 
-  }
+
+
+
+});
   
   // Close the dropdown if the user clicks outside of it
   window.onclick = function(event) {
@@ -119,4 +101,34 @@ function myFunction() {
         }
       }
     }
-  }
+}
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('.sidebar .nav-link').forEach(function (element) {
+
+        element.addEventListener('click', function (e) {
+
+            let nextEl = element.nextElementSibling;
+            let parentEl = element.parentElement;
+
+            if (nextEl) {
+                e.preventDefault();
+                let mycollapse = new bootstrap.Collapse(nextEl);
+
+                if (nextEl.classList.contains('show')) {
+                    mycollapse.hide();
+                } else {
+                    mycollapse.show();
+                    // find other submenus with class=show
+                    var opened_submenu = parentEl.parentElement.querySelector('.submenu.show');
+                    // if it exists, then close all of them
+                    if (opened_submenu) {
+                        new bootstrap.Collapse(opened_submenu);
+                    }
+                }
+            }
+        }); // addEventListener
+    }) // forEach
+});
+// DOMContentLoaded  end

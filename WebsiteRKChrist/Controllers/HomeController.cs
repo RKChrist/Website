@@ -36,11 +36,6 @@ namespace WebsiteRKChrist.Controllers
         {
             return View();
         }
-        public IActionResult LearningObjektives()
-        {
-            return View();
-        }
-
 
         [HttpPost]
         public IActionResult sendEmail(EmailViewModel model)

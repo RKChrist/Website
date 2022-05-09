@@ -6,20 +6,19 @@ using System.Threading.Tasks;
 
 namespace WebsiteRKChrist.Controllers
 {
-    public class WeekController : Controller
+    public class LearningObjectivesController : Controller
     {
-        public IActionResult Week6()
+        public IActionResult Index()
         {
             return View();
         }
-        public IActionResult Week7()
+        public IActionResult Version1()
         {
             return View();
         }
-        public IActionResult Week8()
+        public IActionResult Version2()
         {
             return View();
         }
-        
     }
 }

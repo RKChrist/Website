@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WebsiteRKChrist.Controllers
 {
-    public class LearningObjektiveController : Controller
+    public class LearningPlanController : Controller
     {
         public IActionResult Week6And7()
         {

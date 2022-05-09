@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="~/Logo.ico" />
-    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!--Icons-->
@@ -19,27 +19,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true">
 </head>
 <body>
-
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a asp-action="index" asp-controller="home"><span>{</span>RKChrist<span>}</span></a></div>
+            <div class="logo"><a href="/"><span>{</span>RKChrist<span>}</span></a></div>
             <ul class="menu">
-                <li><a asp-action="index" asp-fragment="about" asp-controller="home" class="menu-btn">Omkring mig</a></li>
-                <li><a asp-action="index" asp-fragment="services" asp-controller="home" class="menu-btn">Ydelser</a></li>
-                <li><a asp-fragment="skills" asp-controller="home" asp-action="index" class="menu-btn">Færdigheder</a></li>
-                <li><a asp-fragment="teams" asp-controller="home" asp-action="index" class="menu-btn">Portfølje</a></li>
-                <li><a asp-fragment="contact"  class="menu-btn">Kontakt</a></li>
-                @*<li>
-                <a onclick="myFunction()" class="dropbtn">Languages</a>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="#home">Danish</a>
-                    <a href="#about">English</a>
-                </div>
-            </li>*@
+                <li><a class="menu-btn" href="/#about">Omkring mig</a></li>
+                <li><a class="menu-btn" href="/#services">Ydelser</a></li>
+                <li><a class="menu-btn" href="/#skills">Færdigheder</a></li>
+                <li><a class="menu-btn" href="/#teams">Portfølje</a></li>
+                <li><a class="menu-btn" href="/Home/Portfolio#contact">Kontakt</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -56,35 +49,91 @@
             </div>
         </div>
     </section>
-    <div class="portfoliobar">
-        <ul>
-            <li><a asp-action="UsedMaterial" asp-controller="home">Gennemgået Materiale</a></li>
-            <li><a asp-action="Literature" asp-controller="home">Litteratur</a></li>
-          
-            <li>
-                <a href="#">Læringsmål og Plan</a>
-                <ul>
-                    <li><a asp-action="Week6And7" asp-controller="LearningObjektive" asp-fragment="c20">Uge 6 og Uge 7</a></li>
-                </ul>
-            </li>
-            <li>
-                <a asp-action="Portfolio" asp-controller="home" asp-fragment="timeline">Logbog</a>
-                <ul>
-                    <li><a asp-action="Week6" asp-controller="Week" asp-fragment="Week">Uge 6</a></li>
-                    <li><a asp-action="Week7" asp-controller="Week" asp-fragment="Week">Uge 7</a></li>
-                </ul>
-            </li>
+    <div class="container">
+        <div class="row">
+            <div class="col-4" style="margin-top:80px;">
+                <nav class="sidebar card py-2 mb-4">
+                    <ul class="nav flex-column" id="nav_accordion">
+                        <li class="nav-item has-submenu">
+                            <a class="nav-link btn-primary btn btn-lg" href="#"> Læringsmål </a>
+                            <ul class="submenu collapse">
+                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Nuværende læringsmål </a></li>
+                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Version 2 </a></li>
+                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Version 3</a> </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-primary btn btn-lg" href="#">Materiale</a>
+                        </li>
+                        <li class="nav-item has-submenu">
+                            <a class="nav-link btn-primary btn btn-lg" href="#">Logbog</a>
+                            <ul class="submenu collapse">
+                                <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week6" asp-controller="Week">Uge 6 </a></li>
+                                <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week7" asp-controller="Week">Uge 7 </a></li>
+                                <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week8" asp-controller="Week">Uge 8</a> </li>
+                                <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week9" asp-controller="Week">Uge 9 </a></li>
+                                <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week10" asp-controller="Week">Uge 10 </a></li>
+                                <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week11" asp-controller="Week">Uge 11</a> </li>
+                                <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week12" asp-controller="Week">Uge 12 </a></li>
+                                <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week13" asp-controller="Week">Uge 13 </a></li>
+                                <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week14" asp-controller="Week">Uge 14</a> </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-submenu">
+                            <a class="nav-link btn-primary btn btn-lg" href="#">Produkt</a>
+                            <ul class="submenu collapse">
+                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 4 </a></li>
+                                <li>
+                                    <a class="nav-link btn-primary btn btn-lg" href="#">Vision </a>
+                                    <ul class="submenu collapse">
+                                        <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 1 </a></li>
+                                        <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 2 </a></li>
+                                        <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 3 </a> </li>
+                                    </ul>
 
-
-        </ul>
-    </div>
-
-
-
-        
-            @RenderBody()
+                                </li>
+                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Sikkerhed </a>
+                                    <ul class="submenu collapse">
+                                        <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 1 </a></li>
+                                        <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 2 </a></li>
+                                        <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 3 </a> </li>
+                                    </ul>
+                                
        
+                                </li>
+                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 7 </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-submenu">
+                            <a class="nav-link btn-primary btn btn-lg" href="#">Læringsplan</a>
+                            <ul class="submenu collapse">
+                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 4 </a></li>
+                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 5 </a></li>
+                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 6 </a></li>
+                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 7 </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-submenu">
+                            <a class="nav-link btn-primary btn btn-lg" href="#">Læringsmål</a>
+                            <ul class="submenu collapse">
+                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 4 </a></li>
+                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 5 </a></li>
+                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 6 </a></li>
+                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 7 </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
 
+            </div>
+            <div class="col-8">
+                @RenderBody()
+            </div>
+
+        </div>
+
+    </div>
+    
 
     <!-- footer section start -->
     <footer>
@@ -93,6 +142,7 @@
 
 
     <script src="~/js/script.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="~/js/portfolio.js" asp-append-version="true"></script>
 </body>
 </html>

@@ -892,16 +892,55 @@ footer {
                     width: 100%;
                 }
 
-
-
-/* about section styling */
-.CyberSecurity .title::after {
-    content: "N/A";
+.nav .sidebar li .submenu {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+   
+}
+.nav .navitem .submenu{
+    text-decoration: none;
 }
 
-.CyberSecurity .Security-content {
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
+.nav .nav-item .nav-link {
+    color: crimson;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid black;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.nav .nav-item .nav-link:hover {
+    color: white;
+    background-color:crimson;
+}
+
+.nav .nav-item .nav-link active{
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+. nav flex-column .nav-item .nav-link a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.nav-item.nav-link a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.card-header {
+    color: crimson;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    
 }
 
