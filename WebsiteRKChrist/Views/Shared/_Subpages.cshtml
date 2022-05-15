@@ -4,7 +4,13 @@
     {
         ViewBag.Product = "hidden";
     }
-   
+    string terms = ViewBag.Terms;
+    if (terms == null && terms == default)
+    {
+        ViewBag.Terms = "hidden";
+    }
+
+
 }
 
 
@@ -76,6 +82,22 @@
                         <li class="nav-item">
                             <a class="nav-link btn-primary btn btn-lg" href="#">Materiale</a>
                         </li>
+                        @if (ViewBag.Terms == "hidden")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link btn-primary btn btn-lg" asp-action="Terms" asp-controller="Home">FagTermer</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item has-submenu">
+                                <a class="nav-link btn-primary btn btn-lg" href="#">FagTermer</a>
+                                <ul class="submenu collapse">
+                                    <li><a class="nav-link btn-primary btn btn-lg" asp-fragment="safety" asp-action="Terms" asp-controller="Week">Sikkerhed </a></li>
+                                    <li><a class="nav-link btn-primary btn btn-lg" asp-action="DataLake" asp-controller="Week">Data Lake </a></li>
+                                </ul>
+                            </li>
+                        }
                         <li class="nav-item has-submenu">
                             <a class="nav-link btn-primary btn btn-lg" href="#">Logbog</a>
                             <ul class="submenu collapse">
@@ -88,6 +110,17 @@
                                 <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week12" asp-controller="Week">Uge 12 </a></li>
                                 <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week13" asp-controller="Week">Uge 13 </a></li>
                                 <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week14" asp-controller="Week">Uge 14</a> </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-submenu">
+                            <a class="nav-link btn-primary btn btn-lg">Tutorials</a>
+                            <ul class="submenu collapse">
+                                <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week6" asp-controller="Tutorials">Misuse- / Abuse case </a></li>
+                                <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week6" asp-controller="Tutorials">Data Flow Diagram </a></li>
+                                <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week6" asp-controller="Tutorials">Certicate Authority </a></li>
+                                <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week7" asp-controller="Tutorials">Bronze Zone</a></li>
+                                <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week8" asp-controller="Tutorials">Silver Zone</a> </li>
+                                <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week9" asp-controller="Tutorials">Gold Zone</a></li>
                             </ul>
                         </li>
                         <li class="nav-item has-submenu">
@@ -143,6 +176,7 @@
                                 <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 7 </a></li>
                             </ul>
                         </li>
+
                     </ul>
                 </nav>
 

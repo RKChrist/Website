@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Controllers\Terms.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\Logo.ico" />
   </ItemGroup>
 
@@ -20,6 +24,18 @@
   <ItemGroup>
     <Folder Include="Views\LearningPlan\" />
     <Folder Include="wwwroot\images\Architecture\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Controllers\Terms.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Controllers\TutorialsController.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
   </ItemGroup>
 
 </Project>

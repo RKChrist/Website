@@ -1,0 +1,70 @@
+﻿@model List<TechnicalTerms>
+@{
+    Layout = "_Subpages";
+}
+<h2 id="safety" style="margin-top:22px; margin-bottom:30px; text-align:center">IT-Sikkerhed Termer</h2>
+<div style="border-bottom: 4px dashed #111;">
+    <!-- On tables -->
+    <table class="table table-primary table-striped" style="margin-bottom:40px;">
+        <thead class="table-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Fagtermer</th>
+                <th scope="col">Betydning</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <th scope="row">@item.Id</th>
+                    <td>@item.Term</td>
+                    <td>@item.Definition</td>
+                </tr>
+            }
+
+
+
+        </tbody>
+    </table>
+</div>
+<h2 id="DataLake" style="margin-top:22px; margin-bottom:30px; text-align:center">Data Lake Termer</h2>
+<!-- On tables -->
+<table class="table">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Fagtermer</th>
+            <th scope="col">Betydning</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- On rows -->
+<tr class="table-primary">...</tr>
+<tr class="table-secondary">...</tr>
+<tr class="table-success">...</tr>
+<tr class="table-danger">...</tr>
+<tr class="table-warning">...</tr>
+<tr class="table-info">...</tr>
+<tr class="table-light">...</tr>
+<tr class="table-dark">...</tr>
+
+<!-- On cells (`td` or `th`) -->

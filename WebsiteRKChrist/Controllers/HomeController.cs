@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
 using WebsiteRKChrist.Infrastructure;
@@ -23,6 +24,24 @@ namespace WebsiteRKChrist.Controllers
         {
             
             return View();
+        }
+        public IActionResult Terms()
+        {
+            ViewBag.Terms = "Shown";
+            var ListOfTerms = new List<TechnicalTerms>();
+            var text = new System.IO.StreamReader(@"Controllers\Terms.csv");
+
+            while (text.EndOfStream == false)
+            {
+                var line = text.ReadLine().Split(";");
+                ListOfTerms.Add(new TechnicalTerms()
+                {
+                    Id = int.Parse(line[0]),
+                    Term = line[1],
+                    Definition = line[2]
+                });
+            }
+            return View(ListOfTerms);
         }
         public IActionResult Portfolio()
         {

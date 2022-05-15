@@ -1,0 +1,35 @@
+﻿1;Anti-virus(anti-malware);A security program designed to monitor a system for malicious software. Once malware is detected, the AV program will attempt to remove the offending item from the system or may simply quarantine the file for further analysis by an administrator. It is important to keep AV software detection databases current in order to have the best chance of detecting known forms of malware.
+2;antivirus software;"A software program that monitors a computer system or network communications for known examples of malicious code and then attempts to remove or quarantine the offending items. (Also known as Malware Scanner.) Most programs use a pattern recognition or signature matching system to detect the presence of known malicious code. Some products have adopted technologies to potentially detect new and unknown malware. These technologies include anomaly detection (i.e. watch for programs which violate specific rules), behavioral detection (i.e. watch for programs that have behaviors that are different from the normal baseline of behavior of the system), and heuristic detection (i.e. watch for programs that exhibit actions which are known to be those of confirmed malware; it is a type of technological profiling)."
+3;Asset;Alting der er brugt og er nødvendig for gennemførsel af en task. Det kan både være ting som udstyr, kode, data, faciliteter, personel, markedværdi og den offenlige holdning.
+4;Authendication;Processen der beviser at en individ er en bestemt identitet. Denne process sker altid efter det første skridt som er identification (i.e man påstår man har en identitet)- Denne process er opnået ved at give enten en eller flere faktorer, der beviser du er den identitet. - Type 1: Noget du ved (e.g password, PIN, eller en anden kombination),  Type 2: noget du har( e.g  kreditkort, USB drive etc.), og type 3: noget du er (e.g fingeraftryk, blodprøve, øje scanner, stemmegenkendelse, ansigts genkendelse etc.)
+5;;
+6;;
+7;;
+8;;
+9;;
+10;;
+11;;
+12;;
+13;;
+14;;
+15;;
+16;;
+17;;
+18;;
+19;;
+20;;
+21;;
+22;;
+23;;
+24;;
+25;;
+26;;
+27;;
+28;;
+29;;
+30;;
+31;;
+32;;
+33;;
+34;;
+35;;
