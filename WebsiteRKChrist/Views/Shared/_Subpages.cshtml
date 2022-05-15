@@ -50,9 +50,7 @@
                 <li><a class="menu-btn" href="/#teams">Portfølje</a></li>
                 <li><a class="menu-btn" href="/Home/Portfolio#contact">Kontakt</a></li>
             </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
+       
         </div>
     </nav>
 
@@ -91,10 +89,10 @@
                         else
                         {
                             <li class="nav-item has-submenu">
-                                <a class="nav-link btn-primary btn btn-lg" href="#">FagTermer</a>
-                                <ul class="submenu collapse">
-                                    <li><a class="nav-link btn-primary btn btn-lg" asp-fragment="safety" asp-action="Terms" asp-controller="Week">Sikkerhed </a></li>
-                                    <li><a class="nav-link btn-primary btn btn-lg" asp-action="DataLake" asp-controller="Week">Data Lake </a></li>
+                                <a class="nav-link  btn btn-lg" asp-action="Terms" asp-controller="Home">FagTermer</a>
+                                <ul class="submenu collapse show">
+                                    <li><a class="nav-link btn-primary btn btn-lg" asp-fragment="safety"  asp-action="Terms" asp-controller="Home">Sikkerhed </a></li>
+                                    <li><a class="nav-link btn-primary btn btn-lg" asp-fragment="DataLake" asp-action="Terms" asp-controller="Home">Data Lake </a></li>
                                 </ul>
                             </li>
                         }
