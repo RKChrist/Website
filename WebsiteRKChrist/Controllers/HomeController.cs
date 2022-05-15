@@ -29,7 +29,7 @@ namespace WebsiteRKChrist.Controllers
         {
             ViewBag.Terms = "Shown";
             var ListOfTerms = new List<TechnicalTerms>();
-            var text = new System.IO.StreamReader(@"Controllers\Terms.csv");
+            var text = new System.IO.StreamReader(@"wwwroot/Terms.csv");
 
             while (text.EndOfStream == false)
             {

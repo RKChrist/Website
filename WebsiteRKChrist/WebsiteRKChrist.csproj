@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <None Include="wwwroot\Logo.ico" />
+    <None Include="wwwroot\Terms.csv" />
   </ItemGroup>
 
   <ItemGroup>
