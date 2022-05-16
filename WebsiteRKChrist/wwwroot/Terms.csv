@@ -1,35 +1,52 @@
-﻿1;Anti-virus(anti-malware);A security program designed to monitor a system for malicious software. Once malware is detected, the AV program will attempt to remove the offending item from the system or may simply quarantine the file for further analysis by an administrator. It is important to keep AV software detection databases current in order to have the best chance of detecting known forms of malware.
+﻿1;AAA (Authendication, Authorization, Accounting);Authendication indebærer at kontrollere, at den identitet, der bruges, bliver brugt af den korrekte ejer af identiteten. Authorization kontrollerer, hvad identiteten har tilladelser (adgangsrettigheder) til, og Accounting registrerer, hvad identiteten gør.
 2;antivirus software;"A software program that monitors a computer system or network communications for known examples of malicious code and then attempts to remove or quarantine the offending items. (Also known as Malware Scanner.) Most programs use a pattern recognition or signature matching system to detect the presence of known malicious code. Some products have adopted technologies to potentially detect new and unknown malware. These technologies include anomaly detection (i.e. watch for programs which violate specific rules), behavioral detection (i.e. watch for programs that have behaviors that are different from the normal baseline of behavior of the system), and heuristic detection (i.e. watch for programs that exhibit actions which are known to be those of confirmed malware; it is a type of technological profiling)."
-3;Asset;Alting der er brugt og er nødvendig for gennemførsel af en task. Det kan både være ting som udstyr, kode, data, faciliteter, personel, markedværdi og den offenlige holdning.
+3;Identification;Identification sikrer at du der den identitet, som du siger du er.
 4;Authendication;Processen der beviser at en individ er en bestemt identitet. Denne process sker altid efter det første skridt som er identification (i.e man påstår man har en identitet)- Denne process er opnået ved at give enten en eller flere faktorer, der beviser du er den identitet. - Type 1: Noget du ved (e.g password, PIN, eller en anden kombination),  Type 2: noget du har( e.g  kreditkort, USB drive etc.), og type 3: noget du er (e.g fingeraftryk, blodprøve, øje scanner, stemmegenkendelse, ansigts genkendelse etc.)
-5;;
-6;;
-7;;
-8;;
-9;;
-10;;
-11;;
-12;;
-13;;
-14;;
-15;;
-16;;
-17;;
-18;;
-19;;
-20;;
-21;;
-22;;
-23;;
-24;;
-25;;
-26;;
-27;;
-28;;
-29;;
-30;;
-31;;
-32;;
-33;;
-34;;
-35;;
+5;Authorization;Authorization involverer at kontrollere, hvad den identitet, der er blevet autentificeret, har adgang til, og derved bestemme, hvad de kan gøre.
+6;Accounting; Accounting er at stå til ansvar for de handlinger, en person foretager, og den nemmeste måde at gøre dette på er at sikre, at deres aktiviteter bliver registreret.
+7;Asset;Alting der er brugt og er nødvendig for gennemførsel af en task. Det kan både være ting som udstyr, kode, data, faciliteter, personel, markedværdi og den offenlige holdning.
+8;Anti-virus(anti-malware);A security program designed to monitor a system for malicious software. Once malware is detected, the AV program will attempt to remove the offending item from the system or may simply quarantine the file for further analysis by an administrator. It is important to keep AV software detection databases current in order to have the best chance of detecting known forms of malware.
+9;Blacklist;En sikkerhedsmekanisme, der forbyder udførelse af disse programmer på en kendt ondsindet eller uønsket liste over software. Listen er en liste over specifikke filer, der vides at være ondsindede eller på anden måde er uønskede. Ethvert program på listen er forbudt at køre, mens ethvert andet program, uanset om det er godartet eller ondsindet, har tilladelse til at køre som standard.
+10;Bug;En fejl  i softwarekodning eller hardwaredesign eller konstruktion. Disse fejl repræsenterer en fejl eller sårbarhed i et system, der kan opdages af angribere og bruges som et angrebspunkt. Angreb bruger ofte fuzzing-teknik (dvs. randomisere testværktøjer) til at lokalisere hidtil ukendte fejl for at finde nye fejl i systemerne.
+11;Ciphertext;Den uforståelige og tilsyneladende tilfældige form for data, der er produceret af krypteringens kryptografiske funktion. Denne kryptering produceres af en symmetrisk algoritme, når et datasæt transformeres af krypteringsprocessen ved hjælp af en valgt nøgle.
+12;Critical Infrastructure;De fysiske eller virtuelle systemer og aktiver, der er afgørende for en organisation eller et land. Hvis disse systemer kompromitteres, ville resultatet være katastrofalt.
+13;Cryptography; 
+14;Cyberattack;Ethvert forsøg på at krænke sikkerheden af et system. Et angreb kan fokusere på at indsamle information, beskadige forretningsprocesser, udnytte fejl, overvåge mål, afbryde forretningsopgaver, udvinde værdi, forårsage skade på logiske eller fysiske aktiver eller bruge systemressourcer til at understøtte angreb mod andre mål. Dette forsøg kan initieres gennem udnyttelse af en sårbarhed i en offentligt eksponeret tjeneste, ved at narre en bruger til at åbne en infektiøs vedhæftet fil eller endda forårsage automatiseret installation af udnyttelsesværktøjer gennem uskyldige webstedsbesøg. (Også kendt som drive-by download.)
+15;Cyber Security;Indsatsen på at designe, implementere og vedligeholde sikkerheden for en organisations netværk, som er forbundet til internettet. Det er en kombination af logiske/tekniske, fysiske og personalefokuserede modforanstaltninger, sikkerhedsforanstaltninger og sikkerhedskontroller.
+16;Cyber Teams;Grupper af professionelle eller amatører specialister i penetrationstest, som har til opgave at evaluere og potentielt forbedre en organisations sikkerhedsposition.
+17;Red Team;Det røde hold er ansvarlig for at angribe systemet. Det røde hold bruges ofte som en del af en multi-team penetrationstest (dvs. sikkerhedsevaluering).
+18;Blue Team;Det blå hold er ansvarlig for at sikre systemet.
+19;Purple Team;"Det lilla hold eller hvidt hold er en blanding af det røde hold og det blå hold. Det lilla hold bruges enten som reference mellem angreb/røde og forsvar/blå hold; eller dette hold kan bruges som en fortolker af resultaterne og aktiviteterne for de røde og blå hold for at maksimere deres effektivitet i de endelige resultater"
+20;Data Anonyminaztion;Dataanonymisering er processen med at beskytte private eller følsomme oplysninger ved at slette eller kryptere identifikatorer, der forbinder en person med lagrede data.
+21;Data Breach;Forekomsten af ​​videregivelse af fortrolige oplysninger, adgang til fortrolige oplysninger, ødelæggelse af dataaktiver eller misbrug af et privat it-miljø
+22;Data Mining;Aktiviteten med at analysere og/eller søge gennem data for at finde elementer af relevans, betydning eller værdi.
+23;Digital Certificate;Et middel til at bevise identitet eller give autentificering almindeligvis ved hjælp af en betroet tredjepartsenhed kendt som en certifikatmyndighed.
+24;Defense In Depth; 
+25;Endpoint Security; 
+26;GDPR; 
+27;Hacktivism;Angribere, der hacker for en sag eller overbevisning i stedet for en form for personlig vinding.
+28;Honeypot;En fælde eller lokkemiddel for angribere. Det er et falsk system, der er konfigureret til at se ud og fungere som et produktionssystem og er placeret, hvor det ville blive stødt på af en uautoriseret enhed, der søger en forbindelse eller et angrebspunkt.
+29;Insider Threat;Sandsynligheden eller potentialet for, at en medarbejder eller en anden form for internt personale kan udgøre en risiko for en organisations stabilitet eller sikkerhed.
+30;Key Exchange; 
+31;Key Logger;Enhver måde, hvorpå et offers tastetryk registreres, når de indtastes på det fysiske tastatur.
+32;Malware (malicious software);Enhver kode skrevet med det specifikke formål at forårsage skade, afsløre information eller på anden måde krænke et systems sikkerhed eller stabilitet.
+33;Obfuscation; 
+34;Outsorcing;Handlingen med at opnå tjenester fra en ekstern enhed.
+35;OWASP (Open Web Application Security Project);Et internetfællesskab fokuseret på at forstå webteknologier og udnyttelse. Deres mål er at hjælpe alle med en hjemmeside, med at forbedre sikkerheden på deres hjemmeside  gennem defensiv programmering, design og konfiguration. Deres tilgang omfatter forståelse af angreb for at vide, hvordan man forsvarer sig mod dem.
+36;Packet sniffing;Handlingen med at indsamle frames eller pakker fra en datanetværkskommunikation. Denne aktivitet gør det muligt at evaluere headerindholdet såvel som nyttelasten af ​​netværkskommunikation.
+37;Patch;En opdatering eller ændring eller et operativsystem eller en applikation.
+38;Pen Testing;Et måde at sikkerhedsevaluere, hvor automatiserede værktøjer og manuelle udnyttelser udføres af sikkerheds- og angrebseksperter. Dette er en avanceret form for sikkerhedsvurdering, der kun bør bruges i miljøer med en moden sikkerhedsinfrastruktur, hvor angrebseksperter bruger de samme værktøjer, teknikker og metoder som kriminelle hackere, og dermed kan det forårsage nedetid og systemskader.
+39;PKI (Public Key Infrastructure); 
+40;Phishing;Et socialt ingeniørangreb, der forsøger at indsamle oplysninger fra ofre. Målet kan være at lære logon-legitimationsoplysninger, kreditkortoplysninger, systemkonfigurationsoplysninger eller andre firma-, netværks-, computer- eller personlige identitetsoplysninger. Disse angreb er ofte vellykkede, fordi de efterligner legitim kommunikation fra betroede enheder eller grupper, såsom falske e-mails fra en bank eller et detailwebsted.
+41;Ransomware;En form for malware, der holder et offers data som gidsel på deres computer, typisk gennem robust kryptering. Dette efterfølges af et krav om betaling i form af Bitcoin (en usporbar digital valuta) for at frigive kontrollen over de opsamlede data tilbage til brugeren.
+42;Restore;Processen med at bringe et system tilbage til en tilstand af normalitet. Denne proces kan involvere formatering af hovedlagerenheden før geninstallation af operativsystemet og applikationerne samt kopiering af data fra sikkerhedskopier til det rekonstituerede system
+43;RSA;
+44;Sandboxing;Et måde at isolere applikationer, kode eller hele operativsystemer for at udføre test eller evaluering. Dette gør det muligt for det isolerede element at blive brugt til evaluering, samtidig med at man forhindrer enhver skade eller skade på værtssystemet eller relaterede data eller lagerenheder.
+45;Social Engineering;Et angreb med fokus på mennesker frem for teknologi. Denne type angreb er psykologisk og har til formål enten at få adgang til information eller til et logisk eller fysisk miljø.
+46;SPAM;En form for uønskede eller uopfordrede beskeder eller kommunikationer, der typisk modtages via e-mail, men også opstår via tekstbeskeder, sociale netværk etc.
+47;Spear phising;En form for social engineering-angreb, der er rettet mod ofre, der har et eksisterende digitalt forhold til en online-enhed såsom en bank eller detailwebsted. Angrebet narrer offeret til at klikke på et hyperlink for at besøge et firmas websted, kun for at blive omdirigeret til en falsk version af webstedet, der drives af angribere. Den falske hjemmeside vil ofte se ud og fungere på samme måde som den legitime hjemmeside og fokusere på at få offeret til at give deres logonoplysninger og potentielt andre personlige identitetsoplysninger såsom svar på deres sikkerhedsspørgsmål, et kontonummer, deres cpr-nummer, postadresse, e-mail adresse og/eller telefonnummer. Målet er at stjæle identitetsoplysninger med henblik på kontoovertagelse eller identitetstyveri.
+48;Spoof (spoofing);Handlingen med at forfalske identiteten af ​​kilden til en kommunikation eller interaktion. Det er muligt at forfalske IP-adresse, MAC-adresse og e-mailadresse.
+49;Spyware;En form for malware, der overvåger brugeraktiviteter og rapporterer dem til en ekstern part. Denne malware kan være legitim, fordi den drives af et reklame- og marketingbureau med det formål at indsamle kundedemografi. Denne malware kan dog også betjenes af angribere, der bruger dataindsamlingsværktøjet til at stjæle en identitet eller lære nok om et offer til at skade dem på andre måder.
+50;Steganography; 
+51;Trojan Horse;En form for malware, hvor en ondsindet nyttelast er indlejret i en godartet værtsfil. Offeret bliver narret til at tro, at den eneste fil, der hentes, er den synlige godartede vært. Men når offeret bruger værtsfilen, deponeres den ondsindede nyttelast automatisk på deres computersystem.
+52;Worm; 

@@ -9,6 +9,11 @@
     {
         ViewBag.Terms = "hidden";
     }
+    var objectives = ViewBag.Objectives;
+    if (ViewBag.Objectives == null && terms == default)
+    {
+        ViewBag.Objectives = "hidden";
+    }
 
 
 }
@@ -71,14 +76,38 @@
                     <ul class="nav flex-column" id="nav_accordion">
                         <li class="nav-item has-submenu">
                             <a class="nav-link btn-primary btn btn-lg" href="#"> Læringsmål </a>
-                            <ul class="submenu collapse">
-                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Nuværende læringsmål </a></li>
-                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Version 2 </a></li>
-                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Version 3</a> </li>
-                            </ul>
+                            @if (ViewBag.Objectives == "hidden")
+                            {
+                                <ul class="submenu collapse">
+                                    <li><a class="nav-link btn-primary btn btn-lg" asp-action="Index" asp-controller="LearningObjectives">Nuværende læringsmål </a></li>
+                                    <li><a class="nav-link btn-primary btn btn-lg" asp-action="Version2" asp-controller="LearningObjectives">Version 2 </a></li>
+                                    <li><a class="nav-link btn-primary btn btn-lg" asp-action="Version1" asp-controller="LearningObjectives">Version 1</a> </li>
+                                </ul>
+                            }
+                            else
+                            {
+                                <ul class="submenu collapse show">
+                                    <li><a class="nav-link btn-primary btn btn-lg" asp-action="Index" asp-controller="LearningObjectives">Nuværende læringsmål </a></li>
+                                    <li><a class="nav-link btn-primary btn btn-lg" asp-action="Version2" asp-controller="LearningObjectives">Version 2 </a></li>
+                                    <li><a class="nav-link btn-primary btn btn-lg" asp-action="Version1" asp-controller="LearningObjectives">Version 1</a> </li>
+                                </ul>
+                            }
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link btn-primary btn btn-lg" href="#">Materiale</a>
+                            <a class="nav-link btn-primary btn btn-lg" asp-action="Material" asp-controller="Home">Materiale</a>
+                        </li>
+                        <li class="nav-item has-submenu">
+                            <a class="nav-link btn-primary btn btn-lg" href="#">Læringsplaner</a>
+                            <ul class="submenu collapse">
+                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Uge 6 og 7 </a></li>
+                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Uge 8 og 9 </a></li>
+                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Uge 10 og 11 </a></li>
+                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Uge 12 og 13 </a></li>
+                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Uge 14 og 15 </a></li>
+                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Uge 16 og 17 </a></li>
+                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Uge 18 og 19 </a></li>
+                            </ul>
                         </li>
                         @if (ViewBag.Terms == "hidden")
                         {
@@ -91,7 +120,7 @@
                             <li class="nav-item has-submenu">
                                 <a class="nav-link  btn btn-lg" asp-action="Terms" asp-controller="Home">FagTermer</a>
                                 <ul class="submenu collapse show">
-                                    <li><a class="nav-link btn-primary btn btn-lg" asp-fragment="safety"  asp-action="Terms" asp-controller="Home">Sikkerhed </a></li>
+                                    <li><a class="nav-link btn-primary btn btn-lg" asp-fragment="safety" asp-action="Terms" asp-controller="Home">Sikkerhed </a></li>
                                     <li><a class="nav-link btn-primary btn btn-lg" asp-fragment="DataLake" asp-action="Terms" asp-controller="Home">Data Lake </a></li>
                                 </ul>
                             </li>
@@ -165,15 +194,7 @@
                             }
 
                         </li>
-                        <li class="nav-item has-submenu">
-                            <a class="nav-link btn-primary btn btn-lg" href="#">Læringsplan</a>
-                            <ul class="submenu collapse">
-                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 4 </a></li>
-                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 5 </a></li>
-                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 6 </a></li>
-                                <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 7 </a></li>
-                            </ul>
-                        </li>
+
 
                     </ul>
                 </nav>
