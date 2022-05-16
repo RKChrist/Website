@@ -49,6 +49,7 @@ namespace WebsiteRKChrist.Controllers
         }
         public IActionResult Material()
         {
+            ViewBag.Material = "Shown";
             return View();
         }
         public IActionResult Literature()

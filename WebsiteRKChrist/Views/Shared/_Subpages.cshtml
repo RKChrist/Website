@@ -9,12 +9,16 @@
     {
         ViewBag.Terms = "hidden";
     }
-    var objectives = ViewBag.Objectives;
-    if (ViewBag.Objectives == null && terms == default)
+    string objectives = ViewBag.Objectives;
+    if (objectives == null && objectives == default)
     {
         ViewBag.Objectives = "hidden";
     }
-
+    string material = ViewBag.Material;
+    if (material == null && material == default)
+    {
+        ViewBag.Material = "hidden";
+    }
 
 }
 
@@ -55,7 +59,7 @@
                 <li><a class="menu-btn" href="/#teams">Portfølje</a></li>
                 <li><a class="menu-btn" href="/Home/Portfolio#contact">Kontakt</a></li>
             </ul>
-       
+
         </div>
     </nav>
 
@@ -93,10 +97,23 @@
                                 </ul>
                             }
                         </li>
+                        @if (ViewBag.Material == "hidden")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link btn-primary btn btn-lg" asp-action="Material" asp-controller="Home">Materiale</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item has-submenu">
+                                <a class="nav-link  btn btn-lg" asp-action="Material" asp-controller="Home">Materiale</a>
+                                <ul class="submenu collapse show">
+                                    <li><a class="nav-link btn-primary btn btn-lg" asp-fragment="safety" asp-action="Material" asp-controller="Home">IT-Sikkerhed </a></li>
+                                    <li><a class="nav-link btn-primary btn btn-lg" asp-fragment="DataLake" asp-action="Material" asp-controller="Home">Data Lake </a></li>
+                                </ul>
+                            </li>
+                        }
 
-                        <li class="nav-item">
-                            <a class="nav-link btn-primary btn btn-lg" asp-action="Material" asp-controller="Home">Materiale</a>
-                        </li>
                         <li class="nav-item has-submenu">
                             <a class="nav-link btn-primary btn btn-lg" href="#">Læringsplaner</a>
                             <ul class="submenu collapse">
@@ -120,7 +137,7 @@
                             <li class="nav-item has-submenu">
                                 <a class="nav-link  btn btn-lg" asp-action="Terms" asp-controller="Home">FagTermer</a>
                                 <ul class="submenu collapse show">
-                                    <li><a class="nav-link btn-primary btn btn-lg" asp-fragment="safety" asp-action="Terms" asp-controller="Home">Sikkerhed </a></li>
+                                    <li><a class="nav-link btn-primary btn btn-lg" asp-fragment="safety" asp-action="Terms" asp-controller="Home">IT-Sikkerhed </a></li>
                                     <li><a class="nav-link btn-primary btn btn-lg" asp-fragment="DataLake" asp-action="Terms" asp-controller="Home">Data Lake </a></li>
                                 </ul>
                             </li>
