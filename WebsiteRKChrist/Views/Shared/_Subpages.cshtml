@@ -80,22 +80,14 @@
                     <ul class="nav flex-column" id="nav_accordion">
                         <li class="nav-item has-submenu">
                             <a class="nav-link btn-primary btn btn-lg" href="#"> Læringsmål </a>
-                            @if (ViewBag.Objectives == "hidden")
-                            {
-                                <ul class="submenu collapse">
-                                    <li><a class="nav-link btn-primary btn btn-lg" asp-action="Index" asp-controller="LearningObjectives">Nuværende læringsmål </a></li>
-                                    <li><a class="nav-link btn-primary btn btn-lg" asp-action="Version2" asp-controller="LearningObjectives">Version 2 </a></li>
-                                    <li><a class="nav-link btn-primary btn btn-lg" asp-action="Version1" asp-controller="LearningObjectives">Version 1</a> </li>
-                                </ul>
-                            }
-                            else
-                            {
-                                <ul class="submenu collapse show">
-                                    <li><a class="nav-link btn-primary btn btn-lg" asp-action="Index" asp-controller="LearningObjectives">Nuværende læringsmål </a></li>
-                                    <li><a class="nav-link btn-primary btn btn-lg" asp-action="Version2" asp-controller="LearningObjectives">Version 2 </a></li>
-                                    <li><a class="nav-link btn-primary btn btn-lg" asp-action="Version1" asp-controller="LearningObjectives">Version 1</a> </li>
-                                </ul>
-                            }
+
+                            <ul class="submenu collapse">
+                                <li><a class="nav-link btn-primary btn btn-lg" asp-action="Index" asp-controller="LearningObjectives">Nuværende læringsmål </a></li>
+                                <li><a class="nav-link btn-primary btn btn-lg" asp-action="Version2" asp-controller="LearningObjectives">Version 2 </a></li>
+                                <li><a class="nav-link btn-primary btn btn-lg" asp-action="Version1" asp-controller="LearningObjectives">Version 1</a> </li>
+                            </ul>
+
+
                         </li>
                         @if (ViewBag.Material == "hidden")
                         {
@@ -159,26 +151,56 @@
                         <li class="nav-item has-submenu">
                             <a class="nav-link btn-primary btn btn-lg">Tutorials</a>
                             <ul class="submenu collapse">
-                                <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week6" asp-controller="Tutorials">Misuse- / Abuse case </a></li>
-                                <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week6" asp-controller="Tutorials">Data Flow Diagram </a></li>
-                                <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week6" asp-controller="Tutorials">Certicate Authority </a></li>
-                                <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week7" asp-controller="Tutorials">Bronze Zone</a></li>
-                                <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week8" asp-controller="Tutorials">Silver Zone</a> </li>
-                                <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week9" asp-controller="Tutorials">Gold Zone</a></li>
+                                <li>
+                                    <a class="nav-link btn-primary btn btn-lg" href="#">IT-Sikkerhed </a>
+                                    <ul class="submenu collapse">
+                                        <li><a class="nav-link btn-primary btn btn-lg" asp-action="AbuseCase" asp-controller="Tutorials">Misuse- / Abuse case </a></li>
+                                        <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week6" asp-controller="Tutorials">Data Flow Diagram </a></li>
+                                        <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week6" asp-controller="Tutorials">TLS / SSL </a></li>
+                                        <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week6" asp-controller="Tutorials">Certicate Authority </a></li>
+                                        <li><a class="nav-link btn-primary btn btn-lg" asp-action="DataGovernance" asp-controller="Home">Data Governance</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="nav-link btn-primary btn btn-lg" href="#">Data Lake </a>
+                                    <ul class="submenu collapse">
+                                        <li><a class="nav-link btn-primary btn btn-lg" asp-action="DataGovernance" asp-controller="Home">Data Governance</a></li>
+                                        <li><a class="nav-link btn-primary btn btn-lg" asp-action="GeneralDecisions" asp-controller="Tutorials">Generelle Overvejelser</a></li>
+                                        <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week7" asp-controller="Tutorials">Bronze Zone</a></li>
+                                        <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week8" asp-controller="Tutorials">Silver Zone</a> </li>
+                                        <li><a class="nav-link btn-primary btn btn-lg" asp-action="Week9" asp-controller="Tutorials">Gold Zone</a></li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="nav-link btn-primary btn btn-lg" asp-action="Week9" asp-controller="Tutorials">Kafka</a>
+                                    <ul class="submenu collapse">
+                                        <li>
+                                            <a class="nav-link btn-primary btn btn-lg" href="#">Getting Started</a>
+                                        </li>
+                                        <li><a class="nav-link btn-primary btn btn-lg" href="#">Topic + Partitions</a> </li>
+                                        <li><a class="nav-link btn-primary btn btn-lg" href="#">SSL</a></li>
+
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
+                        @* Product *@
                         <li class="nav-item has-submenu">
                             @if (ViewBag.Product != "hidden")
                             {
                                 <a class="nav-link btn-primary btn btn-lg" href="#">Produkt</a>
                                 <ul class="submenu collapse">
-                                    <li><a class="nav-link btn-primary btn btn-lg" href="#">Intro </a></li>
+                                    <li><a class="nav-link btn-primary btn btn-lg" asp-action="Index" asp-controller="Product">Intro + Scope </a></li>
+
                                     <li>
-                                        <a class="nav-link btn-primary btn btn-lg" href="#">Vision </a>
+
+                                        <a class="nav-link btn-primary btn btn-lg" href="#">Opsætning </a>
                                         <ul class="submenu collapse">
-                                            <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 1 </a></li>
-                                            <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 2 </a></li>
-                                            <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 3 </a> </li>
+                                            <li><a class="nav-link btn-primary btn btn-lg" href="#">Setup Containers </a></li>
+                                            <li><a class="nav-link btn-primary btn btn-lg" href="#">Producer</a> </li>
+                                            <li><a class="nav-link btn-primary btn btn-lg" href="#">Consumer</a></li>
+
                                         </ul>
 
                                     </li>
@@ -190,7 +212,7 @@
                                             <li>
                                                 <a class="nav-link btn-primary btn btn-lg" href="#">HTTPS </a>
                                                 <ul class="submenu collapse">
-                                                    <li><a class="nav-link btn-primary btn btn-lg" href="#">TLS </a></li>
+                                                    <li><a class="nav-link btn-primary btn btn-lg" href="#">TLS / SSL</a></li>
                                                     <li><a class="nav-link btn-primary btn btn-lg" href="#">Digital Signature</a> </li>
                                                     <li><a class="nav-link btn-primary btn btn-lg" href="#">Certifikat Myndighed</a></li>
 
@@ -202,7 +224,6 @@
 
 
                                     </li>
-                                    <li><a class="nav-link btn-primary btn btn-lg" href="#">Submenu item 7 </a></li>
                                 </ul>
                             }
                             else

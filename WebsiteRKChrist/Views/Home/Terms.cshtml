@@ -15,12 +15,12 @@
         </thead>
         <tbody>
 
-            @foreach (var item in Model)
+            @for (int i = 0; i < 52; i++)
             {
                 <tr>
-                    <th scope="row">@item.Id</th>
-                    <td>@item.Term</td>
-                    <td>@item.Definition</td>
+                    <th scope="row">@Model[i].Id</th>
+                    <td>@Model[i].Term</td>
+                    <td>@Model[i].Definition</td>
                 </tr>
             }
 
@@ -40,20 +40,15 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-        </tr>
+
+        @for (int i = 52; i < Model.Count; i++)
+        {
+            <tr>
+                <th scope="row">@Model[i].Id</th>
+                <td>@Model[i].Term</td>
+                <td>@Model[i].Definition</td>
+            </tr>
+        }
     </tbody>
 </table>
 

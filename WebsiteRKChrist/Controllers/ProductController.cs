@@ -21,7 +21,7 @@ namespace WebsiteRKChrist.Controllers
         }
 
         // GET: ProjectController/Details/5
-        public ActionResult Details(int id)
+        public ActionResult GettingStarted(int id)
         {
             ViewBag.Product = "Shown";
             return View();

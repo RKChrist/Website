@@ -8,9 +8,22 @@ namespace WebsiteRKChrist.Controllers
 {
     public class TutorialsController : Controller
     {
-        public IActionResult Index()
+        public IActionResult AbuseCase()
         {
             return View();
         }
+        public IActionResult DataFlow()
+        {
+            return View();
+        }
+        public IActionResult CertificateAuthority()
+        {
+            return View();
+        }
+        public IActionResult GeneralDecisions()
+        {
+            return View();
+        }
+        
     }
 }

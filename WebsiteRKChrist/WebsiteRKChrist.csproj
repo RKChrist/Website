@@ -13,8 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\Logo.ico" />
-    <None Include="wwwroot\Terms.csv" />
+    <None Include="wwwroot\Logo.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Resource Include="wwwroot\Terms.csv" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,6 +39,12 @@
     <Compile Update="Controllers\TutorialsController.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\Terms.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

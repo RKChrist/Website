@@ -41,6 +41,9 @@ namespace WebsiteRKChrist.Controllers
                     Definition = line[2]
                 });
             }
+
+
+
             return View(ListOfTerms);
         }
         public IActionResult Portfolio()
@@ -53,6 +56,10 @@ namespace WebsiteRKChrist.Controllers
             return View();
         }
         public IActionResult Literature()
+        {
+            return View();
+        }
+        public IActionResult DataGovernance()
         {
             return View();
         }
