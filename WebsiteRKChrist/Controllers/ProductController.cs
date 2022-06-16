@@ -33,7 +33,18 @@ namespace WebsiteRKChrist.Controllers
             ViewBag.Product = "Shown";
             return View();
         }
+        // GET: ProjectController/Create
+        public ActionResult GDPR()
+        {
+            ViewBag.Product = "Shown";
+            return View();
+        }
+        public IActionResult DataGovernance()
+        {
+            ViewBag.Product = "Shown";
+            return View();
+        }
 
-       
+
     }
 }

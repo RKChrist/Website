@@ -1,0 +1,185 @@
+﻿@{
+    Layout = "_Subpages";
+}
+
+
+<style type="text/css">
+    ol {
+        margin: 0;
+        padding: 0
+    }
+
+    table td, table th {
+        padding: 0
+    }
+
+    .c1 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 11pt;
+        font-family: "Arial";
+        font-style: normal
+    }
+
+    .c4 {
+        padding-top: 20pt;
+        padding-bottom: 6pt;
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    .c2 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 20pt;
+        font-family: "Arial";
+        font-style: normal
+    }
+
+    .c0 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.15;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    .c3 {
+        background-color: #ffffff;
+        max-width: 451.4pt;
+        padding: 72pt 72pt 72pt 72pt
+    }
+
+    .c5 {
+        height: 11pt
+    }
+
+    .title {
+        padding-top: 0pt;
+        color: #000000;
+        font-size: 26pt;
+        padding-bottom: 3pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    .subtitle {
+        padding-top: 0pt;
+        color: #666666;
+        font-size: 15pt;
+        padding-bottom: 16pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    li {
+        color: #000000;
+        font-size: 11pt;
+        font-family: "Arial"
+    }
+
+    p {
+        margin: 0;
+        color: #000000;
+        font-size: 11pt;
+        font-family: "Arial"
+    }
+
+    h1 {
+        padding-top: 20pt;
+        color: #000000;
+        font-size: 20pt;
+        padding-bottom: 6pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    h2 {
+        padding-top: 18pt;
+        color: #000000;
+        font-size: 16pt;
+        padding-bottom: 6pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    h3 {
+        padding-top: 16pt;
+        color: #434343;
+        font-size: 14pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    h4 {
+        padding-top: 14pt;
+        color: #666666;
+        font-size: 12pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    h5 {
+        padding-top: 12pt;
+        color: #666666;
+        font-size: 11pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    h6 {
+        padding-top: 12pt;
+        color: #666666;
+        font-size: 11pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        font-style: italic;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+</style>
+<div class="c3">
+    <h1 class="c4" id="h.ttghhm4yud99"><span class="c2">Beskyttelse af Data Sikkerheden</span></h1><p class="c0"><span class="c1">Som altid g&aring;r benytter via CIA triad. Der best&aring;r af fortrolighed, integritet og tilg&aelig;ngelighed. For at vi sikre at vores system beskytter informationen der er laget i vores application. Hvor vi kun s&oslash;rger for at det er de rette brugere der har lov til at tilg&aring;, modificerer eller slette data i vores system.</span></p><p class="c0"><span class="c1">Som altid n&aring;r man har med lagring af data, s&aring; skal man benytte SSL / TLS (mange dokumentation har stadig SSL beskrevet, selvom de benytter TLS og nogle versioner af SSL er ikke udg&aring;et endnu.), hvor vi benytter os af en certificate authority (CA) for at sikre at de applikationer vi snakker med er den / de rigtige applikation(er).</span></p><p class="c0"><span class="c1">Men ud over de mest gense sikringer, s&aring; er man n&oslash;dt til at t&aelig;nke noget Defense In depth, n&aring;r man udvikler ens system. Da hvor meget tid, hvor mange ressource, hvor meget arbejdskraft skal vi benytte p&aring; at sikre vores system? Man kan se ude i industrien &nbsp;at folk der laver deres egen hjemmeside ikke t&aelig;nker over SQL injektion etc. i forhold til udviklingen af deres systemer. S&aring; jeg sp&oslash;rger igen, hvor meget tid og ressourcer skal der bruges?</span></p><p class="c0"><span class="c1">Min holdning er at det hele kommer an p&aring; det givne produkt, der skal udvikles og hvilken slags data den skal behandle. Hvis det er et lagersystem, s&aring; er det m&aring;ske godt nok at t&aelig;nke over SQL Injektion, CORS, TLS og Encryption. Men derudover kan det blive en hindring for brugeren at benytte systemet. Da jo flere mekanismer vi s&aelig;tte p&aring; for at validere de gense brugere, jo l&aelig;ngere tid tager det at benytte vores system. S&aring; man kan sige at jo sikrere ens system er, jo langsommere er det ogs&aring; (selvf&oslash;lgelig kommer det an p&aring; flere faktorer en sikkerhed).</span></p><p class="c0"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 601.70px; height: 424.00px;"><img alt="" src="~/images/Data/image4.png" style="width: 601.70px; height: 424.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span><span class="c1">&nbsp; </span></p><p class="c0"><span class="c1">Hvis man tager udgangspunkt i ovenst&aring;ende billede der illustrerer Data livscyklen, s&aring; snakker man altid om at en bruger opretter data og derefter gemmer dataen. S&aring; n&aring;r data-en er gemt, s&aring; benytter han dataen til et specifik form&aring;l (kunne v&aelig;re at logge ind). &nbsp;S&aring; n&aring;r den bliver benyttet, s&aring; bliver den delt med andre bruger. Det kan at andre folk kan se ens bruger. Efter en tidsperiode, s&aring; bliver den givne data m&aring;ske ikke benyttet s&aring; meget mere. S&aring; bliver dataen flytter fra aktiv brug til arkiveret. Efter noget tid arkiveret bliver det slettet helt fra systemet. </span></p><p class="c0 c5"><span class="c1"></span></p><p class="c0"><span class="c1">Hvis man altid skal have denne cyklus i m&aelig;ngde og altid skal s&oslash;rge for at dataen er sikker igennem alle forl&oslash;bende er man n&oslash;dt til at t&aelig;nke over hvor meget IT-sikkerhed der skal v&aelig;re p&aring; hvert niveau.</span></p>
+</div>

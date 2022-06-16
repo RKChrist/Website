@@ -53,11 +53,11 @@
         <div class="max-width">
             <div class="logo"><a href="/"><span>{</span>RKChrist<span>}</span></a></div>
             <ul class="menu">
-                <li><a class="menu-btn" href="/#about">Omkring mig</a></li>
-                <li><a class="menu-btn" href="/#services">Ydelser</a></li>
-                <li><a class="menu-btn" href="/#skills">Færdigheder</a></li>
-                <li><a class="menu-btn" href="/#teams">Portfølje</a></li>
-                <li><a class="menu-btn" href="/Home/Portfolio#contact">Kontakt</a></li>
+                <li><a asp-action="index" asp-fragment="about" asp-controller="home" class="menu-btn">Omkring mig</a></li>
+                <li><a asp-action="index" asp-fragment="services" asp-controller="home" class="menu-btn">Ydelser</a></li>
+                <li><a asp-action="index" asp-fragment="skills" asp-controller="home" class="menu-btn">Færdigheder</a></li>
+                <li><a asp-action="index" asp-fragment="teams" asp-controller="home" class="menu-btn">Portfølje</a></li>
+                <li><a asp-action="index" asp-fragment="contact" asp-controller="home" class="menu-btn">Kontakt</a></li>
             </ul>
 
         </div>
@@ -207,13 +207,9 @@
                                     <li>
                                         <a class="nav-link btn-primary btn btn-lg" href="#">Sikkerhed </a>
                                         <ul class="submenu collapse">
-                                            <li><a class="nav-link btn-primary btn btn-lg" href="#">GDPR </a></li>
-                                            <li><a class="nav-link btn-primary btn btn-lg" href="#">Misuse / Abuse Cases</a> </li>
+                                            <li><a class="nav-link btn-primary btn btn-lg" asp-action="GDPR" asp-controller="Product">GDPR </a></li>
+                                            <li><a class="nav-link btn-primary btn btn-lg" asp-action="DataGovernance" asp-controller="Product">Data Governance</a></li>
 
-
-                                            <li><a class="nav-link btn-primary btn btn-lg" href="#">TLS / SSL</a>
-                                            </li>
-                                            
                                         </ul>
                                     </li>
                                 </ul>

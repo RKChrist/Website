@@ -24,6 +24,20 @@ namespace WebsiteRKChrist.Controllers
         {
             return View();
         }
+        public IActionResult BronzeZone()
+        {
+            return View();
+        }
+
+        public IActionResult SilverZone()
+        {
+            return View();
+        }
+
+        public IActionResult GoldZone()
+        {
+            return View();
+        }
         
     }
 }
