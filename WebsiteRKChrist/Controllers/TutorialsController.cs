@@ -38,6 +38,14 @@ namespace WebsiteRKChrist.Controllers
         {
             return View();
         }
-        
+        public IActionResult TLS()
+        {
+            return View();
+        }
+        public IActionResult CA()
+        {
+            return View();
+        }
+
     }
 }
