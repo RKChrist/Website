@@ -42,6 +42,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="wwwroot\Learning.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Update="wwwroot\Terms.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -22,7 +22,7 @@ namespace WebsiteRKChrist.Controllers
 
         public IActionResult Index()
         {
-            
+
             return View();
         }
         public IActionResult Terms()
@@ -53,7 +53,21 @@ namespace WebsiteRKChrist.Controllers
         public IActionResult Material()
         {
             ViewBag.Material = "Shown";
-            return View();
+            var ListOfTerms = new List<Material>();
+            var text = new System.IO.StreamReader(@"wwwroot/Learning.csv");
+
+            while (text.EndOfStream == false)
+            {
+                var line = text.ReadLine().Split(";");
+                ListOfTerms.Add(new Models.Material()
+                {
+                    Id = int.Parse(line[0]),
+                    Name = line[1],
+                    Description = line[2],
+                    Link = line[3]
+                });
+            }
+            return View(ListOfTerms);
         }
         public IActionResult Literature()
         {
@@ -69,10 +83,10 @@ namespace WebsiteRKChrist.Controllers
         {
             EmailSender sender = new EmailSender();
             sender.Sending(model);
-            
+
             return View();
         }
 
-       
+
     }
 }
