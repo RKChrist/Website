@@ -46,6 +46,14 @@ namespace WebsiteRKChrist.Controllers
         {
             return View();
         }
+        public IActionResult Started()
+        {
+            return View();
+        }
+        public IActionResult Topic()
+        {
+            return View();
+        }
 
     }
 }

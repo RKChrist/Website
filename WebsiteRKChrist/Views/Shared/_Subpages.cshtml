@@ -173,13 +173,13 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a class="nav-link btn-primary btn btn-lg" asp-action="Week9" asp-controller="Tutorials">Kafka</a>
+                                    <a class="nav-link btn-primary btn btn-lg" >Kafka</a>
                                     <ul class="submenu collapse">
                                         <li>
-                                            <a class="nav-link btn-primary btn btn-lg" href="#">Getting Started</a>
+                                            <a class="nav-link btn-primary btn btn-lg" asp-action="Started" asp-controller="Tutorials">Getting Started</a>
                                         </li>
-                                        <li><a class="nav-link btn-primary btn btn-lg" href="#">Topic + Partitions</a> </li>
-                                        <li><a class="nav-link btn-primary btn btn-lg" href="#">SSL</a></li>
+                                        <li><a class="nav-link btn-primary btn btn-lg" asp-action="Topic" asp-controller="Tutorials">Topic + Partitions</a> </li>
+                                        @*<li><a class="nav-link btn-primary btn btn-lg" href="#">SSL - TLS - SASL</a></li>*@
 
                                     </ul>
                                 </li>
@@ -197,9 +197,9 @@
 
                                         <a class="nav-link btn-primary btn btn-lg" href="#">Opsætning </a>
                                         <ul class="submenu collapse">
-                                            <li><a class="nav-link btn-primary btn btn-lg" href="#">Setup Containers </a></li>
-                                            <li><a class="nav-link btn-primary btn btn-lg" href="#">Producer</a> </li>
-                                            <li><a class="nav-link btn-primary btn btn-lg" href="#">Consumer</a></li>
+                                            <li><a class="nav-link btn-primary btn btn-lg" asp-action="Setup" asp-controller="Product">Setup Containers </a></li>
+                                            <li><a class="nav-link btn-primary btn btn-lg" asp-action="Producer" asp-controller="Product">Producer</a> </li>
+                                            <li><a class="nav-link btn-primary btn btn-lg" asp-action="Consumer" asp-controller="Product">Consumer</a></li>
 
                                         </ul>
 

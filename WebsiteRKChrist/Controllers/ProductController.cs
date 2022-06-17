@@ -44,6 +44,21 @@ namespace WebsiteRKChrist.Controllers
             ViewBag.Product = "Shown";
             return View();
         }
+        public IActionResult Setup()
+        {
+            ViewBag.Product = "Shown";
+            return View();
+        }
+        public IActionResult Consumer()
+        {
+            ViewBag.Product = "Shown";
+            return View();
+        }
+        public IActionResult Producer()
+        {
+            ViewBag.Product = "Shown";
+            return View();
+        }
 
 
     }
